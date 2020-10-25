@@ -1,0 +1,1094 @@
+// ШРИФТЫ
+@font-face {
+    font-family: 'Montblanc-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local("MontBlanc-Regular"), url("Fonts/Montblanc/Montblanc-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Mories';
+    font-style: normal;
+    font-weight: bold;
+    src: local("Mories-Bold"), url("/fonts/Mories/Mories Bold.otf") format("otf"), url("/fonts/Mories/Mories Bold.woff") format("woff"), url("/fonts/Mories/Mories Bold.woff2") format("woof2"), url("/fonts/Mories/Mories Bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Mories';
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mories"), url("/fonts/Mories/Mories.otf") format("otf"), url("/fonts/Mories/Mories.woff") format("woff"), url("/fonts/Mories/Mories.woff2") format("woof2"), url("/fonts/Mories/Mories.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'Mories-Display';
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mories-Display"), url("/fonts/Mories/Mories-Display.otf") format("otf"), url("/fonts/Mories/Mories-Display.woff") format("woff"), url("/fonts/Mories/Mories-Display.woff2") format("woof2"), url("/fonts/Mories/Mories-Display.ttf") format("ttf");
+}
+
+//Сбросс
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block; /* делаем элементы блочными (для старых браузеров) */
+}
+
+body {
+    line-height: 1; /* межстрочный интервал текста на странице */
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: ''; /* Убираем кавычки у Q и BLOCKQUOTE */
+    content: none; /* добавляем для верности */
+}
+
+blockquote, q {
+    quotes: none; /* еще один способ убрать кавычки */
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.cursor-point {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    backdrop-filter: invert(1);
+    filter: grayscale(1);
+    z-index: 999999999;
+    pointer-events: none;
+}
+
+//ПЕРЕМЕННЫЕ
+$light: #f3f3f3;
+$dark: #1a1c25;
+$orange: #ff6300;
+$OneFift: 150px;
+$OneFiftM: 11.5vw;
+$OneFiftT: 90px;
+$Mont: Montblanc-Regular;
+$Mor: Mories;
+$MorD: Mories-Display;
+
+//Стили
+html {
+    cursor: none;
+}
+@-moz-document url-prefix()
+{
+    .cursor-point {
+        background-color: #888888;
+    }
+}
+body {
+    font-family: "Mories", "Montblanc-Regular", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    height: 100%;
+    margin: 0;
+    color: $dark;
+    letter-spacing: normal;
+    padding: 0 5.2vw;
+    background-color: $light;
+    overflow-x: hidden;
+	/* Cursor styles */
+    --cursor-stroke: #888888;
+    --cursor-fill: none;
+    --cursor-stroke-width: 1px;
+}
+
+a {
+cursor: none;
+}
+
+//Start
+.logo {
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.copyr {
+    img {
+        height: 40px;
+        width: 40px;
+        padding: 0 10px 0 0;
+        float: left;
+        box-sizing: unset;
+    }
+
+    position: absolute;
+    right: 40px;
+    top: 37px;
+    line-height: 40px;
+}
+
+.video {
+    float: right;
+    position: absolute;
+    right: 100px;
+    z-index: -1;
+    height: 540px;
+    width: 706px;
+}
+
+.startText {
+    font-size: $OneFift;
+    font-family: $Mont;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.mainName {
+    padding: 46vh 0 20px 0;
+
+    h1 {
+        white-space: nowrap;
+    }
+}
+
+.mainDes {
+    text-align: right;
+}
+
+.menuMob {
+    display: none;
+    padding-top: 59px;
+}
+
+//scrollBall
+
+.scrollBallstart {
+    margin: -8vh 0 0 0;
+    padding: 0;
+    border-radius: 50%;
+    width: 188px;
+    height: 188px;
+    border: 1px solid;
+    animation: scrollball 2.5s linear infinite;
+    font-family: $Mor;
+    font-size: 10px;
+    text-align: center;
+    line-height: 188px;
+    color: $orange;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.SBBGstart {
+    background-color: $dark;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transform: translate3d(-75%, -75%, 0);
+    border-radius: 50%;
+    width: 188px;
+    height: 188px;
+}
+
+@keyframes scrollball {
+    0% {
+        border-color: $dark;
+    }
+
+    50% {
+        border-color: $orange;
+    }
+
+    100% {
+        border-color: $dark;
+    }
+}
+
+// Меню
+header {
+    position: absolute;
+    bottom: 2vh;
+    right: 100px;
+    z-index: 9999999;
+    transition: transform 1s ease-in-out;
+}
+
+nav {
+    font-size: 48px;
+    margin: 0 auto;
+    padding-top: 45px;
+    z-index: 999999;
+
+    .closeNav {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+
+        li {
+            a {
+                transition: 0.3s;
+            }
+            padding: 1px 25px;
+        }
+
+        li:first-child {
+            padding: 0 25px 0 0;
+        }
+
+        li:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+#pOn, #aOn, #abOn, #cOn {
+    opacity: 0;
+    transition: 0.3s;
+    color: $orange;
+    position: absolute;
+    left: 0;
+}
+
+.MenuOn {
+    position: relative;
+}
+
+#pOff, #aOff, #abOff, #cOff {
+    position: absolute;
+    left: 1px;
+    bottom: 0;
+    transition: 0.3s;
+    color: $dark;
+}
+
+#portfolio:hover {
+    #pOn {
+        opacity: 1;
+    }
+
+    #pOff {
+        opacity: 0;
+    }
+
+    color: $orange;
+}
+
+#art:hover {
+    #aOn {
+        opacity: 1;
+    }
+
+    #aOff {
+        opacity: 0;
+    }
+
+    color: $orange;
+}
+
+#about:hover {
+    #abOn {
+        opacity: 1;
+    }
+
+    #abOff {
+        opacity: 0;
+    }
+
+    color: $orange;
+}
+
+#contact:hover {
+    #cOn {
+        opacity: 1;
+    }
+
+    #cOff {
+        opacity: 0;
+    }
+
+    color: $orange;
+}
+
+.active {
+    color: $orange !important;
+
+    #pOn, #aOn, #abOn, #cOn {
+        opacity: 1;
+    }
+
+    #pOff, #aOff, #abOff, #cOff {
+        opacity: 0;
+    }
+}
+
+//portfol
+.PortfCenter {
+    text-align: center;
+    margin: 0 auto;
+    width: 1360px;
+    margin-top: 152px;
+    margin-bottom: 472px;
+
+    .PortfAll {
+        display: flex;
+        flex-wrap: wrap;
+
+        .portfol {
+            margin-right: 80px;
+            margin-top: 156px;
+
+            img {
+                width: 400px;
+                height: 700px;
+            }
+
+            .textPortf {
+                font-size: 10px;
+                border-bottom: 1px solid $dark;
+                padding: 31px 0;
+                text-align: right;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 1301px) {
+    .PortfCenter {
+        .PortfAll {
+            .portfol:nth-child(3n+2) {
+                transform: translate(0, 230px);
+                img {
+                    transform: translate(0, -230px);
+                }
+            }
+            .portfol:nth-child(3n+3) {
+                margin-right: 0;
+                transform: translate(0, 90px);
+                img {
+                    transform: translate(0, -90px);
+                }
+            }
+            .portfol:nth-child(3n+1) {
+                img {
+                    transform: translate(0, 0);
+                }
+            }
+        }
+    }
+}
+
+//Paintings
+.AnimPaint {
+    overflow: hidden;
+    margin: 0 0 180px 0;
+}
+
+.PaintLogo {
+    font-size: $OneFift;
+    font-family: $Mont;
+    text-transform: uppercase;
+    text-align: right;
+    transform: translate(0, 100%);
+}
+
+.Paint {
+    position: relative;
+
+    img {
+        max-width: 1397px;
+        width: 72.8vw;
+        height: 560px;
+        object-fit: cover;
+    }
+
+    .paint2 {
+        display: none;
+    }
+
+    .scrollBallMore {
+        position: absolute;
+        right: 0;
+        top: 186px;
+        border-radius: 50%;
+        width: 188px;
+        height: 188px;
+        border: 1px solid $light;
+        font-family: $Mor;
+        font-size: 16px;
+        text-align: center;
+        line-height: 188px;
+        overflow: hidden;
+        transform: translate(0, -130%);
+        transition: color .5s;
+    }
+
+    .SBBGMore {
+        background-color: $orange;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        transform: translate(75%, -75%);
+        border-radius: 50%;
+        width: 188px;
+        height: 188px;
+        transition: .5s;
+    }
+
+    .scrollBallMore:hover .SBBGMore {
+        transform: translate(0, 0);
+    }
+
+    .scrollBallMore:hover {
+        color: $dark;
+    }
+}
+
+.PaintAnimImg {
+    overflow: hidden;
+    position: relative;
+}
+
+.PaintBg {
+    max-width: 1397px;
+    width: 72.8vw;
+    height: 560px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1a1c258a;
+    z-index: 99;
+}
+
+//text
+.textBall {
+    position: relative;
+    padding: 363px 0 258px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ball {
+    width: 188px;
+    height: 188px;
+    background-color: $dark;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 200px;
+    transform: translate(0, -200%);
+}
+
+.text {
+    width: 820px;
+    font-family: $Mor;
+    font-size: 30px;
+    line-height: 43px;
+    margin: 0 42px 0 0;
+}
+
+.MorePrj {
+    position: absolute;
+    right: 671px - 88px;
+    bottom: 0;
+    font-size: 16px;
+    line-height: 88px;
+    transition: .3s;
+    box-sizing: unset;
+
+    svg {
+        width: 88px;
+        height: 88px;
+        vertical-align: middle;
+        padding-left: 80px;
+        box-sizing: unset;
+        transition: transform .3s ease-in-out;
+    }
+}
+.ArrowOn {
+    fill: $light;
+transition: fill .3s;
+}
+
+
+.MorePrj:hover {
+    color: $orange;
+    svg {
+        transform: translateX(-44px);
+    }
+    .ArrowOn{
+        fill: $orange !important;
+    }
+}
+
+//footer
+.footerAll {
+    padding-top: 20vh;
+    position: relative;
+}
+
+.footer {
+    font-family: $Mont;
+    font-size: 60px;
+    display: flex;
+    justify-content: space-between;
+    .allHref {
+        overflow: hidden;
+    }
+
+    .allHref div {
+        display: inline-block;
+        margin: 0 2vw 0 0;
+        position: relative;
+    }
+
+    .behance, .drib, .insta {
+        transform: translate(0, 100%);
+    }
+    .behanceSvg {
+        fill: $light;
+        transition: fill 0.3s;
+    }
+    .behance:hover .behanceSvg {
+        fill: $orange !important;
+    }
+    .drib:hover .behanceSvg {
+        fill: $orange !important;
+    }
+    .insta:hover .behanceSvg {
+        fill: $orange !important;
+    }
+
+    .allHref div:last-child {
+        margin: 0;
+    }
+}
+
+.CopyFooter {
+    font-size: 10px;
+    position: absolute;
+    bottom: -230px;
+    right: 113px;
+    padding-bottom: 55px;
+}
+
+.Dark {
+    background-color: $dark;
+    color: $light;
+
+    .RowPortf {
+        .portfol {
+            div {
+                border-bottom-color: $light;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1540px) and (min-width: 1300px) {
+    body {
+        padding: 0 40px;
+    }
+
+    .startText {
+        font-size: 9vw;
+    }
+
+    .PortfCenter {
+        width: 1240px;
+
+        .PortfAll {
+            .portfol {
+                margin-right: 20px;
+            }
+
+            .portfol:nth-child(3n+3) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .PaintLogo {
+        margin: inherit 0 102px 0;
+    }
+
+    .Paint {
+        margin-left: 4vw;
+
+        img {
+            display: none;
+            width: 63.7vw;
+            max-width: 917px;
+            height: 560px;
+            object-fit: cover;
+        }
+
+        .paint2 {
+            display: block;
+        }
+
+        .scrollBallMore {
+            right: 2vw;
+        }
+    }
+
+    .PaintBg {
+        width: 63.7vw;
+        max-width: 917px;
+        height: 560px;
+    }
+
+    .text {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 701px) {
+    body {
+        padding: 2.5vw;
+    }
+
+    .video {
+        height: 484px;
+        width: 633px;
+        right: 20px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .copyr {
+        right: 20px;
+        top: 20px;
+    }
+
+    .startText {
+        font-size: $OneFiftM;
+    }
+
+    header {
+        right: 20px + 15px;
+    }
+
+    nav {
+        font-size: 36px;
+        padding-top: 42px;
+
+        ul {
+            li {
+                padding: 1px 15px;
+            }
+
+            li:first-child {
+                padding: 0 15px 0 0;
+            }
+        }
+    }
+
+    .PortfCenter {
+        width: 95.5vw;
+        margin-top: 146px;
+
+        .PortfAll {
+            .portfol {
+                margin-right: 2.2vw;
+                margin-top: 138px;
+
+                img {
+                    width: 46.5vw;
+                    height: auto;
+                }
+
+                .textPortf {
+                    padding: 26px 0;
+                }
+            }
+
+            .portfol:nth-child(2n) {
+                margin-right: 0;
+                transform: translate(0, 205px);
+                img{
+                    transform: translate(0, -205px);
+                }
+            }
+        }
+    }
+
+    .AnimPaint {
+        margin: 227px 0 110px 0;
+    }
+
+    .PaintLogo {
+        font-size: $OneFiftM;
+    }
+
+    .Paint {
+        img {
+            display: none;
+            width: 58.2vw;
+            height: 560px;
+            object-fit: cover;
+        }
+
+        .paint2 {
+            display: block;
+            margin-left: 0;
+        }
+
+        .scrollBallMore {
+            right: 0;
+        }
+    }
+
+    .PaintBg {
+        width: 58.2vw;
+        height: 560px;
+    }
+
+    .textBall {
+        padding-bottom: 212px;
+    }
+
+    .text {
+        font-size: 24px;
+        width: 488px;
+        margin: 0;
+        line-height: 36px;
+    }
+
+    .ball {
+        top: 50%;
+    }
+
+    .MorePrj {
+        right: 217px - 20px;
+    }
+
+    .footerAll {
+        padding-top: 16vh;
+    }
+
+    .footer {
+        font-size: 48px;
+        display: block;
+
+        img:nth-child(2) {
+            bottom: 3px;
+        }
+
+        .allHref {
+            div {
+                margin: 0 60px 0 0;
+            }
+
+            text-align: right;
+            margin-top: 92px;
+        }
+    }
+
+    .CopyFooter {
+        right: 133px - 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        padding: 2.4vw 9px;
+    }
+
+    //menu
+    .menuMob {
+        display: block;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transform: translateY(-100%);
+    }
+
+    nav {
+        display: block;
+        text-align: left;
+        background-color: $dark;
+        color: $light;
+        transition: .7s ease-in-out;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 0;
+        margin: 0;
+
+        .closeNav {
+            display: block;
+            height: 60px;
+            width: 60px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+
+        ul {
+            margin-top: 10vh;
+            font-size: 45px;
+            display: block;
+
+            a {
+                transition: 0.3s;
+            }
+
+            li {
+                display: block;
+                padding: 6.5vh 10vw;
+                border-bottom: 2px solid $light;
+                margin-right: 5.3vw;
+                white-space: nowrap;
+            }
+
+            li:first-child {
+                padding: 6.5vh 10vw;
+            }
+
+            li:last-child {
+                padding: 6.5vh 10vw;
+                border: none;
+            }
+        }
+    }
+
+    .sticky {
+        top: 59px;
+        right: 20px !important;
+    }
+
+    #pOff, #aOff, #abOff, #cOff {
+        color: $light;
+    }
+
+    .menuMob {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        z-index: 9999;
+    }
+    .menuMob * {
+        z-index: 999;
+    }
+    .MobMenCir {
+        fill: $dark;
+    }
+    .MobMenPal {
+        fill: $light;
+    }
+
+    .video {
+        height: auto;
+        width: 90vw;
+        right: unset;
+        left: 1px;
+    }
+
+    .copyr {
+        right: 20px;
+        top: 20px;
+    }
+
+    .logo {
+        img {
+            height: 30px;
+            width: 30px;
+        }
+
+        left: 20px;
+        top: 20px;
+    }
+
+    .scrollBallstart {
+        margin: 0;
+    }
+
+    .startText {
+        font-size: 36px;
+    }
+
+    .PortfCenter {
+        width: 95.2vw;
+        margin-top: 152px;
+        margin-bottom: 172px;
+
+        .PortfAll {
+            .portfol {
+                margin-right: 0;
+                margin-top: 22px;
+                display: none;
+
+                img {
+                    width: 95.2vw;
+                    height: auto;
+                    transform: translate(0, -40px);
+                }
+            }
+
+            .portfol:nth-child(-n+6) {
+                display: block;
+            }
+        }
+    }
+
+    .PortfButt {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid $light;
+        padding: 28px;
+        margin-top: 171px;
+    }
+
+    .AnimPaint {
+        margin: 172px 0 92px 0;
+    }
+
+    .PaintLogo {
+        font-size: 36px;
+    }
+
+    .Paint {
+        img {
+            width: 100vw;
+            min-width: unset;
+            height: 314px;
+            display: none;
+        }
+
+        .paint2 {
+            display: block;
+        }
+
+        .scrollBallMore {
+            position: relative;
+            top: unset;
+            margin: 64px 0 0 auto;
+        }
+    }
+
+    .PaintAnimImg {
+        margin: 0 -9px;
+    }
+
+    .PaintBg {
+        width: 100vw;
+        height: 314px;
+        min-width: unset;
+    }
+
+    .textBall {
+        padding: 172px 0 172px 0;
+    }
+
+    .text {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .MorePrj {
+        right: 17px;
+    }
+
+    .ball {
+        bottom: -52px - 188px;
+    }
+
+    .footer {
+        padding-top: 20vh;
+        font-size: 6.5vw;
+        display: block;
+
+        img:nth-child(2) {
+            bottom: 1px;
+        }
+
+        .allHref {
+            div {
+                margin: 0 13vw 0 0;
+            }
+
+            text-align: right;
+            margin-top: 64px;
+        }
+    }
+}
+
+.cursor, .cursor-point {
+	display: none;
+}
+
+
+
+@media (any-pointer: fine) {
+    .cursor-point {
+        display: block;
+    }
+	.cursor {
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: block;
+		pointer-events: none;
+        opacity: 0;
+        z-index: 999999999999999;
+	}
+	.cursor__inner {
+		fill: var(--cursor-fill);
+		stroke: var(--cursor-stroke);
+		stroke-width: var(--cursor-stroke-width);
+	}
+}
