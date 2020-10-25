@@ -27,13 +27,87 @@
   src: local("Mories-Display"), url("Fonts/Mories/Mories-Display.otf") format("otf"), url("Fonts/Mories/Mories-Display.woff") format("woff"), url("Fonts/Mories/Mories-Display.woff2") format("woof2"), url("Fonts/Mories/Mories-Display.ttf") format("ttf");
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
-em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
-details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
-output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -54,8 +128,17 @@ a:visited {
   text-decoration: none;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
   /* делаем элементы блочными (для старых браузеров) */
 }
@@ -65,19 +148,23 @@ body {
   /* межстрочный интервал текста на странице */
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   /* Убираем кавычки у Q и BLOCKQUOTE */
   content: none;
   /* добавляем для верности */
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
   /* еще один способ убрать кавычки */
 }
@@ -298,7 +385,10 @@ nav ul li:last-child {
   padding-right: 0;
 }
 
-#pOn, #aOn, #abOn, #cOn {
+#pOn,
+#aOn,
+#abOn,
+#cOn {
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -311,7 +401,10 @@ nav ul li:last-child {
   position: relative;
 }
 
-#pOff, #aOff, #abOff, #cOff {
+#pOff,
+#aOff,
+#abOff,
+#cOff {
   position: absolute;
   left: 1px;
   bottom: 0;
@@ -372,11 +465,17 @@ nav ul li:last-child {
   color: #ff6300 !important;
 }
 
-.active #pOn, .active #aOn, .active #abOn, .active #cOn {
+.active #pOn,
+.active #aOn,
+.active #abOn,
+.active #cOn {
   opacity: 1;
 }
 
-.active #pOff, .active #aOff, .active #abOff, .active #cOff {
+.active #pOff,
+.active #aOff,
+.active #abOff,
+.active #cOff {
   opacity: 0;
 }
 
@@ -626,7 +725,9 @@ nav ul li:last-child {
   position: relative;
 }
 
-.footer .behance, .footer .drib, .footer .insta {
+.footer .behance,
+.footer .drib,
+.footer .insta {
   -webkit-transform: translate(0, 100%);
           transform: translate(0, 100%);
 }
@@ -849,8 +950,8 @@ nav ul li:last-child {
     bottom: 0;
     right: 0;
     left: 0;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: translateY(-120vh);
+            transform: translateY(-120vh);
   }
   nav {
     display: block;
@@ -900,7 +1001,10 @@ nav ul li:last-child {
     top: 59px;
     right: 20px !important;
   }
-  #pOff, #aOff, #abOff, #cOff {
+  #pOff,
+  #aOff,
+  #abOff,
+  #cOff {
     color: #f3f3f3;
   }
   .menuMob {
@@ -1027,7 +1131,8 @@ nav ul li:last-child {
   }
 }
 
-.cursor, .cursor-point {
+.cursor,
+.cursor-point {
   display: none;
 }
 
