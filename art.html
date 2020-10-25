@@ -317,37 +317,74 @@
 
 
     //NAV
-    $(document).ready(function () {
-      //NAV
-      if (screen.width <= 700) {
-        $("header").css("transform", "translateY(-100%)");
-        $(".menuMob").click(function () {
-          $("header").css("transform", "translateY(0)");
+    //nav
+        $(document).ready(function () {
+            if (screen.width <= 700) {
+                $('header').css('display', 'none');
+                setTimeout(() => {
+                $('header').css('transform', 'translateY(-120vh)');
+                }, 100);
+                $('.menuMob').click(
+                    function () {
+                        $('header').css('display', 'block');
+                        setTimeout(() => {
+                        $('header').css('transform', 'translateY(0)');
+                        }, 100);
+                    }
+                );
+                $('#closeMenu').click(
+                    function () {
+                        $('header').css('transform', 'translateY(-120vh)');
+                        setTimeout(() => {
+                            $('header').css('display', 'none');
+                        }, 1000);
+                    }
+                );
+                $('.menu').click(
+                    function () {
+                        setTimeout(() => {
+                            $('header').css('display', 'none');
+                        }, 1000);
+                        $('header').css('transform', 'translateY(-120vh)');
+                    }
+                );
+            }
         });
-        $("#closeMenu").click(function () {
-          $("header").css("transform", "translateY(-100%)");
+        $(window).resize(function Nav() {
+            if (screen.width <= 700) {
+                $('header').css('display', 'none');
+                setTimeout(() => {
+                $('header').css('transform', 'translateY(-120vh)');
+                }, 100);
+                $('.menuMob').click(
+                    function () {
+                        $('header').css('display', 'block');
+                        setTimeout(() => {
+                        $('header').css('transform', 'translateY(0)');
+                        }, 100);
+                    }
+                );
+                $('#closeMenu').click(
+                    function () {
+                        $('header').css('transform', 'translateY(-120vh)');
+                        setTimeout(() => {
+                            $('header').css('display', 'none');
+                        }, 1000);
+                    }
+                );
+                $('.menu').click(
+                    function () {
+                        setTimeout(() => {
+                            $('header').css('display', 'none');
+                        }, 1000);
+                        $('header').css('transform', 'translateY(-120vh)');
+                    }
+                );
+            }
+            else {
+                $('header').css('transform', 'translateY(0)');
+            }
         });
-        $(".menu").click(function () {
-          $("header").css("transform", "translateY(-100%)");
-        });
-      }
-    });
-    $(window).resize(function Nav() {
-      if (screen.width <= 700) {
-        $("header").css("transform", "translateY(-100%)");
-        $(".menuMob").click(function () {
-          $("header").css("transform", "translateY(0)");
-        });
-        $("#closeMenu").click(function () {
-          $("header").css("transform", "translateY(-100%)");
-        });
-        $(".menu").click(function () {
-          $("header").css("transform", "translateY(-100%)");
-        });
-      } else {
-        $("header").css("transform", "translateY(0)");
-      }
-    });
     //END NAV
     /////////////////////////
 
