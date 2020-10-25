@@ -975,7 +975,7 @@ nav ul li:last-child {
     z-index: 9999;
   }
   nav ul {
-    margin-top: 10vh;
+    padding-top: 10vh;
     font-size: 45px;
     display: block;
   }
