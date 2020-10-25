@@ -79,7 +79,7 @@ $(document).ready(function () {
         .addTo(cntrTop);
 
 
-    var NavPortf = new ScrollMagic.Scene({ triggerElement: ".PortfAll", duration: $(".PortfCenter").height() + 203 })
+    var NavPortf = new ScrollMagic.Scene({ triggerElement: ".PortfAll", duration: $("#PortfNav").height() })
         .setClassToggle("#portfolio", "active")
         .addIndicators({
             name: 'Port Nav',
@@ -87,11 +87,11 @@ $(document).ready(function () {
             colorEnd: '#0ff'
         })
         .addTo(cntrSeven);
-    var NavArt = new ScrollMagic.Scene({ triggerElement: "#PaintNav", duration: $("#PaintNav").height() })
+    var NavArt = new ScrollMagic.Scene({ triggerElement: "#PaintNav", duration: $("#PaintNav").height()})
         .setClassToggle("#art", "active")
         .addIndicators({
             name: 'Art Nav',
-            colorStart: '#000'
+            colorStart: '#f00'
         })
         .addTo(cntrSeven);
 
