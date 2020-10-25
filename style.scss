@@ -28,13 +28,87 @@
 }
 
 //Сбросс
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
-em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
-details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
-output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -55,27 +129,45 @@ a:visited {
     text-decoration: none;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block; /* делаем элементы блочными (для старых браузеров) */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+    /* делаем элементы блочными (для старых браузеров) */
 }
 
 body {
-    line-height: 1; /* межстрочный интервал текста на странице */
+    line-height: 1;
+    /* межстрочный интервал текста на странице */
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: ''; /* Убираем кавычки у Q и BLOCKQUOTE */
-    content: none; /* добавляем для верности */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    /* Убираем кавычки у Q и BLOCKQUOTE */
+    content: none;
+    /* добавляем для верности */
 }
 
-blockquote, q {
-    quotes: none; /* еще один способ убрать кавычки */
+blockquote,
+q {
+    quotes: none;
+    /* еще один способ убрать кавычки */
 }
 
 table {
@@ -110,12 +202,13 @@ $MorD: Mories-Display;
 html {
     cursor: none;
 }
-@-moz-document url-prefix()
-{
+
+@-moz-document url-prefix() {
     .cursor-point {
         background-color: #888888;
     }
 }
+
 body {
     font-family: "Mories", "Montblanc-Regular", sans-serif;
     font-size: 30px;
@@ -127,14 +220,14 @@ body {
     padding: 0 5.2vw;
     background-color: $light;
     overflow-x: hidden;
-	/* Cursor styles */
+    /* Cursor styles */
     --cursor-stroke: #888888;
     --cursor-fill: none;
     --cursor-stroke-width: 1px;
 }
 
 a {
-cursor: none;
+    cursor: none;
 }
 
 //Start
@@ -270,6 +363,7 @@ nav {
             a {
                 transition: 0.3s;
             }
+
             padding: 1px 25px;
         }
 
@@ -283,7 +377,10 @@ nav {
     }
 }
 
-#pOn, #aOn, #abOn, #cOn {
+#pOn,
+#aOn,
+#abOn,
+#cOn {
     opacity: 0;
     transition: 0.3s;
     color: $orange;
@@ -295,7 +392,10 @@ nav {
     position: relative;
 }
 
-#pOff, #aOff, #abOff, #cOff {
+#pOff,
+#aOff,
+#abOff,
+#cOff {
     position: absolute;
     left: 1px;
     bottom: 0;
@@ -354,11 +454,17 @@ nav {
 .active {
     color: $orange !important;
 
-    #pOn, #aOn, #abOn, #cOn {
+    #pOn,
+    #aOn,
+    #abOn,
+    #cOn {
         opacity: 1;
     }
 
-    #pOff, #aOff, #abOff, #cOff {
+    #pOff,
+    #aOff,
+    #abOff,
+    #cOff {
         opacity: 0;
     }
 }
@@ -400,17 +506,21 @@ nav {
         .PortfAll {
             .portfol:nth-child(3n+2) {
                 transform: translate(0, 230px);
+
                 img {
                     transform: translate(0, -230px);
                 }
             }
+
             .portfol:nth-child(3n+3) {
                 margin-right: 0;
                 transform: translate(0, 90px);
+
                 img {
                     transform: translate(0, -90px);
                 }
             }
+
             .portfol:nth-child(3n+1) {
                 img {
                     transform: translate(0, 0);
@@ -547,18 +657,21 @@ nav {
         transition: transform .3s ease-in-out;
     }
 }
+
 .ArrowOn {
     fill: $light;
-transition: fill .3s;
+    transition: fill .3s;
 }
 
 
 .MorePrj:hover {
     color: $orange;
+
     svg {
         transform: translateX(-44px);
     }
-    .ArrowOn{
+
+    .ArrowOn {
         fill: $orange !important;
     }
 }
@@ -574,6 +687,7 @@ transition: fill .3s;
     font-size: 60px;
     display: flex;
     justify-content: space-between;
+
     .allHref {
         overflow: hidden;
     }
@@ -584,19 +698,25 @@ transition: fill .3s;
         position: relative;
     }
 
-    .behance, .drib, .insta {
+    .behance,
+    .drib,
+    .insta {
         transform: translate(0, 100%);
     }
+
     .behanceSvg {
         fill: $light;
         transition: fill 0.3s;
     }
+
     .behance:hover .behanceSvg {
         fill: $orange !important;
     }
+
     .drib:hover .behanceSvg {
         fill: $orange !important;
     }
+
     .insta:hover .behanceSvg {
         fill: $orange !important;
     }
@@ -753,7 +873,8 @@ transition: fill .3s;
             .portfol:nth-child(2n) {
                 margin-right: 0;
                 transform: translate(0, 205px);
-                img{
+
+                img {
                     transform: translate(0, -205px);
                 }
             }
@@ -853,7 +974,7 @@ transition: fill .3s;
         bottom: 0;
         right: 0;
         left: 0;
-        transform: translateY(-100%);
+        transform: translateY(-120vh);
     }
 
     nav {
@@ -910,7 +1031,10 @@ transition: fill .3s;
         right: 20px !important;
     }
 
-    #pOff, #aOff, #abOff, #cOff {
+    #pOff,
+    #aOff,
+    #abOff,
+    #cOff {
         color: $light;
     }
 
@@ -920,12 +1044,15 @@ transition: fill .3s;
         bottom: 20px;
         z-index: 9999;
     }
+
     .menuMob * {
         z-index: 999;
     }
+
     .MobMenCir {
         fill: $dark;
     }
+
     .MobMenPal {
         fill: $light;
     }
@@ -1067,8 +1194,9 @@ transition: fill .3s;
     }
 }
 
-.cursor, .cursor-point {
-	display: none;
+.cursor,
+.cursor-point {
+    display: none;
 }
 
 
@@ -1077,18 +1205,20 @@ transition: fill .3s;
     .cursor-point {
         display: block;
     }
-	.cursor {
-		position: fixed;
-		top: 0;
-		left: 0;
-		display: block;
-		pointer-events: none;
+
+    .cursor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        pointer-events: none;
         opacity: 0;
         z-index: 999999999999999;
-	}
-	.cursor__inner {
-		fill: var(--cursor-fill);
-		stroke: var(--cursor-stroke);
-		stroke-width: var(--cursor-stroke-width);
-	}
+    }
+
+    .cursor__inner {
+        fill: var(--cursor-fill);
+        stroke: var(--cursor-stroke);
+        stroke-width: var(--cursor-stroke-width);
+    }
 }
