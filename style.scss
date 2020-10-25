@@ -475,7 +475,7 @@ nav {
     margin: 0 auto;
     width: 1360px;
     margin-top: 152px;
-    margin-bottom: 472px;
+    padding-bottom: 472px;
 
     .PortfAll {
         display: flex;
@@ -999,7 +999,7 @@ nav {
         }
 
         ul {
-            margin-top: 10vh;
+            padding-top: 10vh;
             font-size: 45px;
             display: block;
 
@@ -1090,7 +1090,7 @@ nav {
     .PortfCenter {
         width: 95.2vw;
         margin-top: 152px;
-        margin-bottom: 172px;
+        padding-bottom: 172px;
 
         .PortfAll {
             .portfol {

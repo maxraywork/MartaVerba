@@ -484,7 +484,7 @@ nav ul li:last-child {
   margin: 0 auto;
   width: 1360px;
   margin-top: 152px;
-  margin-bottom: 472px;
+  padding-bottom: 472px;
 }
 
 .PortfCenter .PortfAll {
@@ -1049,7 +1049,7 @@ nav ul li:last-child {
   .PortfCenter {
     width: 95.2vw;
     margin-top: 152px;
-    margin-bottom: 172px;
+    padding-bottom: 172px;
   }
   .PortfCenter .PortfAll .portfol {
     margin-right: 0;
