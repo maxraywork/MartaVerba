@@ -344,40 +344,64 @@
         //nav
         $(document).ready(function () {
             if (screen.width <= 700) {
-                $('header').css('transform', 'translateY(-100%)');
+                $('header').css('display', 'none');
+                setTimeout(() => {
+                $('header').css('transform', 'translateY(-120vh)');
+                }, 100);
                 $('.menuMob').click(
                     function () {
+                        $('header').css('display', 'block');
+                        setTimeout(() => {
                         $('header').css('transform', 'translateY(0)');
+                        }, 100);
                     }
                 );
                 $('#closeMenu').click(
                     function () {
-                        $('header').css('transform', 'translateY(-100%)');
+                        $('header').css('transform', 'translateY(-120vh)');
+                        setTimeout(() => {
+                            $('header').css('display', 'none');
+                        }, 1000);
                     }
                 );
                 $('.menu').click(
                     function () {
-                        $('header').css('transform', 'translateY(-100%)');
+                        setTimeout(() => {
+                            $('header').css('display', 'none');
+                        }, 1000);
+                        $('header').css('transform', 'translateY(-120vh)');
                     }
                 );
             }
         });
         $(window).resize(function Nav() {
             if (screen.width <= 700) {
-                $('header').css('transform', 'translateY(-100%)');
+                $('header').css('display', 'none');
+                setTimeout(() => {
+                $('header').css('transform', 'translateY(-120vh)');
+                }, 100);
                 $('.menuMob').click(
                     function () {
+                        $('header').css('display', 'block');
+                        setTimeout(() => {
                         $('header').css('transform', 'translateY(0)');
+                        }, 100);
                     }
                 );
                 $('#closeMenu').click(
                     function () {
-                        $('header').css('transform', 'translateY(-100%)');
+                        $('header').css('transform', 'translateY(-120vh)');
+                        setTimeout(() => {
+                            $('header').css('display', 'none');
+                        }, 1000);
                     }
                 );
                 $('.menu').click(
                     function () {
-                        $('header').css('transform', 'translateY(-100%)');
+                        setTimeout(() => {
+                            $('header').css('display', 'none');
+                        }, 1000);
+                        $('header').css('transform', 'translateY(-120vh)');
                     }
                 );
             }
