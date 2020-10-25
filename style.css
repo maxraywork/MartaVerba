@@ -304,8 +304,8 @@ a {
   position: absolute;
   top: 0;
   z-index: -1;
-  -webkit-transform: translate3d(-75%, -75%, 0);
-          transform: translate3d(-75%, -75%, 0);
+  -webkit-transform: translate(-75%, -75%);
+          transform: translate(-75%, -75%);
   border-radius: 50%;
   width: 188px;
   height: 188px;
