@@ -3,7 +3,7 @@
   font-family: 'Montblanc-Regular';
   font-style: normal;
   font-weight: normal;
-  src: local("MontBlanc-Regular"), url("Fonts/Montblanc/Montblanc-Regular.ttf") format("truetype");
+  src: local("MontBlanc-Regular"), url("/fonts/Montblanc/Montblanc-Regular.ttf") format("truetype");
 }
 
 @font-face {
