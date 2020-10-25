@@ -3,28 +3,28 @@
   font-family: 'Montblanc-Regular';
   font-style: normal;
   font-weight: normal;
-  src: local("MontBlanc-Regular"), url("/fonts/Montblanc/Montblanc-Regular.ttf") format("truetype");
+  src: local("MontBlanc-Regular"), url("Fonts/Montblanc/Montblanc-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Mories';
   font-style: normal;
   font-weight: bold;
-  src: local("Mories-Bold"), url("/fonts/Mories/Mories Bold.otf") format("otf"), url("/fonts/Mories/Mories Bold.woff") format("woff"), url("/fonts/Mories/Mories Bold.woff2") format("woof2"), url("/fonts/Mories/Mories Bold.ttf") format("ttf");
+  src: local("Mories-Bold"), url("Fonts/Mories/Mories Bold.otf") format("otf"), url("Fonts/Mories/Mories Bold.woff") format("woff"), url("Fonts/Mories/Mories Bold.woff2") format("woof2"), url("Fonts/Mories/Mories Bold.ttf") format("ttf");
 }
 
 @font-face {
   font-family: 'Mories';
   font-style: normal;
   font-weight: normal;
-  src: local("Mories"), url("/fonts/Mories/Mories.otf") format("otf"), url("/fonts/Mories/Mories.woff") format("woff"), url("/fonts/Mories/Mories.woff2") format("woof2"), url("/fonts/Mories/Mories.ttf") format("ttf");
+  src: local("Mories"), url("Fonts/Mories/Mories.otf") format("otf"), url("Fonts/Mories/Mories.woff") format("woff"), url("Fonts/Mories/Mories.woff2") format("woof2"), url("Fonts/Mories/Mories.ttf") format("ttf");
 }
 
 @font-face {
   font-family: 'Mories-Display';
   font-style: normal;
   font-weight: normal;
-  src: local("Mories-Display"), url("/fonts/Mories/Mories-Display.otf") format("otf"), url("/fonts/Mories/Mories-Display.woff") format("woff"), url("/fonts/Mories/Mories-Display.woff2") format("woof2"), url("/fonts/Mories/Mories-Display.ttf") format("ttf");
+  src: local("Mories-Display"), url("Fonts/Mories/Mories-Display.otf") format("otf"), url("Fonts/Mories/Mories-Display.woff") format("woff"), url("Fonts/Mories/Mories-Display.woff2") format("woof2"), url("Fonts/Mories/Mories-Display.ttf") format("ttf");
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
