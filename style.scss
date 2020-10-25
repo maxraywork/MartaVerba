@@ -728,10 +728,10 @@ nav {
 
 .CopyFooter {
     font-size: 10px;
-    position: absolute;
-    bottom: -230px;
-    right: 113px;
     padding-bottom: 55px;
+    padding-top: 230px;
+    margin-right: 113px;
+    text-align: right;
 }
 
 .Dark {
@@ -951,10 +951,6 @@ nav {
             text-align: right;
             margin-top: 92px;
         }
-    }
-
-    .CopyFooter {
-        right: 133px - 20px;
     }
 }
 

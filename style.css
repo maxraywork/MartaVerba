@@ -756,10 +756,10 @@ nav ul li:last-child {
 
 .CopyFooter {
   font-size: 10px;
-  position: absolute;
-  bottom: -230px;
-  right: 113px;
   padding-bottom: 55px;
+  padding-top: 230px;
+  margin-right: 113px;
+  text-align: right;
 }
 
 .Dark {
@@ -931,9 +931,6 @@ nav ul li:last-child {
   }
   .footer .allHref div {
     margin: 0 60px 0 0;
-  }
-  .CopyFooter {
-    right: 113px;
   }
 }
 
