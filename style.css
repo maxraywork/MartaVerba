@@ -281,7 +281,7 @@ a {
 }
 
 .scrollBallstart {
-  padding: 0;
+  position: relative;
   border-radius: 50%;
   width: 188px;
   height: 188px;
@@ -289,15 +289,12 @@ a {
   -webkit-animation: scrollball 2.5s linear infinite;
           animation: scrollball 2.5s linear infinite;
   font-family: Mories;
-  font-size: 10px;
+  font-size: 16px;
   text-align: center;
   line-height: 188px;
-  color: #ff6300;
-  float: left;
   overflow: hidden;
-  position: absolute;
-  bottom: 0;
-  left: 5px;
+  -webkit-transition: color .5s;
+  transition: color .5s;
 }
 
 .SBBGstart {
@@ -310,6 +307,8 @@ a {
   border-radius: 50%;
   width: 188px;
   height: 188px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @-webkit-keyframes scrollball {

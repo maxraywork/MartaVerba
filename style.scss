@@ -292,34 +292,58 @@ a {
 
 //scrollBall
 
+// .scrollBallstart {
+//     margin: -8vh 0 0 0;
+//     padding: 0;
+//     border-radius: 50%;
+//     width: 188px;
+//     height: 188px;
+//     border: 1px solid;
+//     animation: scrollball 2.5s linear infinite;
+//     font-family: $Mor;
+//     font-size: 10px;
+//     text-align: center;
+//     line-height: 188px;
+//     color: $orange;
+//     float: left;
+//     overflow: hidden;
+//     position: relative;
+// }
+
+// .SBBGstart {
+//     background-color: $dark;
+//     position: absolute;
+//     top: 0;
+//     z-index: -1;
+//     transform: translate(75%, -75%);
+//     border-radius: 50%;
+//     width: 188px;
+//     height: 188px;
+// }
 .scrollBallstart {
-    padding: 0;
+    position: relative;
     border-radius: 50%;
     width: 188px;
     height: 188px;
     border: 1px solid;
     animation: scrollball 2.5s linear infinite;
     font-family: $Mor;
-    font-size: 10px;
+    font-size: 16px;
     text-align: center;
     line-height: 188px;
-    color: $orange;
-    float: left;
     overflow: hidden;
-    position: absolute;
-    bottom: 0;
-    left: 5px;
+    transition: color .5s;
 }
-
 .SBBGstart {
     background-color: $dark;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    transform: translate(75%, -75%);
-    border-radius: 50%;
-    width: 188px;
-    height: 188px;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            transform: translate(75%, -75%);
+            border-radius: 50%;
+            width: 188px;
+            height: 188px;
+            transition: .5s;
 }
 
 @keyframes scrollball {
