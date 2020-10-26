@@ -293,8 +293,8 @@ a {
 //scrollBall
 
 .scrollBallstart {
-    margin: -8vh 0 0 0;//
-    padding: 0;//
+    margin: -8vh 0 0 0;
+    padding: 0;
     border-radius: 50%;
     width: 188px;
     height: 188px;
@@ -558,43 +558,43 @@ nav {
         display: none;
     }
 
-    .scrollBallMore {
-        position: absolute;//
-        right: 0;//
-        top: 186px;//
-        border-radius: 50%;
-        width: 188px;
-        height: 188px;
-        border: 1px solid $light;
-        font-family: $Mor;
-        font-size: 16px;
-        text-align: center;
-        line-height: 188px;
-        overflow: hidden;
-        transform: translate(0, -130%);
-        transition: color .5s;
-    }
-
-    .SBBGMore {
-        background-color: $orange;
-        position: absolute;
-        top: 0;
-        z-index: -1;
-        transform: translate(75%, -75%);
-        border-radius: 50%;
-        width: 188px;
-        height: 188px;
-        transition: .5s;
-    }
-
-    .scrollBallMore:hover .SBBGMore {
-        transform: translate(0, 0);
-    }
-
-    .scrollBallMore:hover {
-        color: $dark;
-    }
 }
+        .scrollBallMore {
+            position: absolute;
+            right: 0;
+            top: 186px;
+            border-radius: 50%;
+            width: 188px;
+            height: 188px;
+            border: 1px solid $light;
+            font-family: $Mor;
+            font-size: 16px;
+            text-align: center;
+            line-height: 188px;
+            overflow: hidden;
+            transform: translate(0, -130%);
+            transition: color .5s;
+        }
+    
+        .SBBGMore {
+            background-color: $orange;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            transform: translate(75%, -75%);
+            border-radius: 50%;
+            width: 188px;
+            height: 188px;
+            transition: .5s;
+        }
+    
+        .scrollBallMore:hover .SBBGMore {
+            transform: translate(0, 0);
+        }
+    
+        .scrollBallMore:hover {
+            color: $dark;
+        }
 
 .PaintAnimImg {
     overflow: hidden;

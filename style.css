@@ -296,7 +296,7 @@ a {
   color: #ff6300;
   float: left;
   overflow: hidden;
-  position: absolute;
+  position: relative;
 }
 
 .SBBGstart {
@@ -566,7 +566,7 @@ nav ul li:last-child {
   display: none;
 }
 
-.Paint .scrollBallMore {
+.scrollBallMore {
   position: absolute;
   right: 0;
   top: 186px;
@@ -585,7 +585,7 @@ nav ul li:last-child {
   transition: color .5s;
 }
 
-.Paint .SBBGMore {
+.SBBGMore {
   background-color: #ff6300;
   position: absolute;
   top: 0;
@@ -599,12 +599,12 @@ nav ul li:last-child {
   transition: .5s;
 }
 
-.Paint .scrollBallMore:hover .SBBGMore {
+.scrollBallMore:hover .SBBGMore {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
 
-.Paint .scrollBallMore:hover {
+.scrollBallMore:hover {
   color: #1a1c25;
 }
 
