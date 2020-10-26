@@ -296,7 +296,7 @@ a {
   color: #ff6300;
   float: left;
   overflow: hidden;
-  position: relative;
+  position: absolute;
 }
 
 .SBBGstart {
