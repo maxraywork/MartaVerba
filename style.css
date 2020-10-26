@@ -804,7 +804,7 @@ nav ul li:last-child {
   .Paint .paint2 {
     display: block;
   }
-  .Paint .scrollBallMore {
+  .scrollBallMore {
     right: 2vw;
   }
   .PaintBg {
@@ -893,7 +893,7 @@ nav ul li:last-child {
     display: block;
     margin-left: 0;
   }
-  .Paint .scrollBallMore {
+  .scrollBallMore {
     right: 0;
   }
   .PaintBg {
@@ -1085,7 +1085,7 @@ nav ul li:last-child {
   .Paint .paint2 {
     display: block;
   }
-  .Paint .scrollBallMore {
+  .scrollBallMore {
     position: relative;
     top: unset;
     margin: 64px 0 0 auto;
