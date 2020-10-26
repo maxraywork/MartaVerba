@@ -321,17 +321,19 @@ a {
 //     height: 188px;
 // }
 .scrollBallstart {
-    position: relative;
+    position: absolute;
+    right: 0;
+    top: 186px;
     border-radius: 50%;
     width: 188px;
     height: 188px;
-    border: 1px solid;
-    animation: scrollball 2.5s linear infinite;
+    border: 1px solid $dark;
     font-family: $Mor;
     font-size: 16px;
     text-align: center;
     line-height: 188px;
     overflow: hidden;
+    transform: translate(0, -130%);
     transition: color .5s;
 }
 .SBBGstart {

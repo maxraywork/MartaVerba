@@ -281,18 +281,20 @@ a {
 }
 
 .scrollBallstart {
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 186px;
   border-radius: 50%;
   width: 188px;
   height: 188px;
-  border: 1px solid;
-  -webkit-animation: scrollball 2.5s linear infinite;
-          animation: scrollball 2.5s linear infinite;
+  border: 1px solid #1a1c25;
   font-family: Mories;
   font-size: 16px;
   text-align: center;
   line-height: 188px;
   overflow: hidden;
+  -webkit-transform: translate(0, -130%);
+          transform: translate(0, -130%);
   -webkit-transition: color .5s;
   transition: color .5s;
 }
