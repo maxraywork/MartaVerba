@@ -295,7 +295,7 @@ a {
 .scrollBallstart {
     position: absolute;
     bottom: 10vh;
-    left: 10vw;
+    left: 4vw;
     padding: 0;
     border-radius: 50%;
     width: 188px;
@@ -309,6 +309,7 @@ a {
     color: $orange;
     float: left;
     overflow: hidden;
+    transform: translateZ(0);
 }
 
 .SBBGstart {
