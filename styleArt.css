@@ -18,7 +18,7 @@
   text-align: center;
   margin: 0 auto;
   width: 1300px;
-  margin-top: 243px;
+  padding-top: 243px;
 }
 
 .ArtCenter .ArtAll {
@@ -506,7 +506,7 @@
   }
   .ArtCenter {
     width: 93.1vw;
-    margin-top: 20vh;
+    padding-top: 20vh;
   }
   .ArtCenter .ArtAll .art {
     margin-top: 48px;
