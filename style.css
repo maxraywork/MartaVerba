@@ -281,6 +281,7 @@ a {
 }
 
 .scrollBallstart {
+  margin: -10vh 0 0 0;
   padding: 0;
   border-radius: 50%;
   width: 188px;
