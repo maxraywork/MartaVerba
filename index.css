@@ -3,19 +3,7 @@
 /* Grid demo 2 */
 
 .content {
-    display: grid;
-    --column-gap: 2rem;
-    --row-gap: 10vh;
-    --mwidth: 400px;
-    --columns: 3;
-    max-width: calc(var(--mwidth) * var(--columns) + (var(--columns) - 1) * var(--column-gap));
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(auto-fill, minmax(calc(var(--mwidth)/2), var(--mwidth)));
-    grid-column-gap: var(--column-gap);
-    grid-row-gap: var(--row-gap);
-    justify-content: center;
-    padding: 4rem 0 20rem;
+    padding: 4rem 0 0;
     margin-top: 13rem;
 }
 
@@ -37,4 +25,8 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+canvas {
+    display: block;
 }

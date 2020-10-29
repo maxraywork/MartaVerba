@@ -110,8 +110,8 @@
             <div class="logo"><img src="img/icon/logo.png" alt="logo"></div>
             <div class="copyr"><img src="img/icon/copyright.png" alt="copyright">2020</div>
             <video autoplay loop muted="muted" class="video">
-                <source src="img/video/Ball.mp4" type="video/mp4" muted="muted">
-                <source src="img/video/Ball2.webm" type="video/webm" muted="muted">
+                <source src="img/video/Ball.mp4" type="video/mp4">
+                <source src="img/video/Ball2.webm" type="video/webm">
             </video>
             <div class="startText mainName">
                 <h1 id="MV" style="transform: translate(0, 150%);">Marta verba</h1>
@@ -125,18 +125,10 @@
                 </div>
             </a>
         </div>
+
         <div id="PortfNav">
             <div class="PortfCenter">
                 <div class="PortfAll" id="portfolID">
-                    <div class="portfol">
-                        <div><a href="##">
-                            <div class="content">
-                            <figure class="item__fig js-plane">
-                              <img class="item__img" src="img/progects/photo-01.png" alt="Some image" />
-                            </figure>
-                        </div></a></div>
-                        <div class="textPortf">Website</div>
-                    </div>
                     <div class="portfol">
                         <div><a href="##"><img src="img/progects/photo-01.png" alt="project"></a></div>
                         <div class="textPortf">Website</div>
@@ -315,7 +307,6 @@
         </defs>
         <circle class="cursor__inner" cx="140" cy="140" r="50"></circle>
     </svg>
-    <script src="cursor.js"></script>
 
     <script>
 
@@ -332,8 +323,10 @@
 
         var myHash = location.hash; //получаем значение хеша
         location.hash = ''; //очищаем хеш
-        if (myHash[1] != undefined) { //проверяем, есть ли в хеше какое-то значение
+        if (myHash[1] != undefined) {
+            $(document).ready(function () {
             $('html, body').animate({ scrollTop: $(myHash).offset().top }, 500); //скроллим за полсекунды
+            }); //проверяем, есть ли в хеше какое-то значение
         };
 
         //Anim start
@@ -348,13 +341,13 @@
             if (screen.width <= 700) {
                 $('header').css('display', 'none');
                 setTimeout(() => {
-                $('header').css('transform', 'translateY(-120vh)');
+                    $('header').css('transform', 'translateY(-120vh)');
                 }, 100);
                 $('.menuMob').click(
                     function () {
                         $('header').css('display', 'block');
                         setTimeout(() => {
-                        $('header').css('transform', 'translateY(0)');
+                            $('header').css('transform', 'translateY(0)');
                         }, 100);
                     }
                 );
@@ -380,13 +373,13 @@
             if (screen.width <= 700) {
                 $('header').css('display', 'none');
                 setTimeout(() => {
-                $('header').css('transform', 'translateY(-120vh)');
+                    $('header').css('transform', 'translateY(-120vh)');
                 }, 100);
                 $('.menuMob').click(
                     function () {
                         $('header').css('display', 'block');
                         setTimeout(() => {
-                        $('header').css('transform', 'translateY(0)');
+                            $('header').css('transform', 'translateY(0)');
                         }, 100);
                     }
                 );
@@ -428,7 +421,7 @@
         //End Portfol Mob
 
         //CUrsor script 
-        $(document).scroll(function() {
+        $(document).scroll(function () {
 
         });
 
@@ -460,7 +453,8 @@
         });
     </script>
     <script src="js/main.js"></script>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script src="cursor.js"></script>
 </body>
 
 </html>
