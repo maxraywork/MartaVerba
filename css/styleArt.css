@@ -499,7 +499,7 @@
   .navArt {
     top: 0;
     right: 0;
-    height: 100vh;
+    height: auto;
     z-index: 999999;
   }
   nav {
@@ -532,7 +532,7 @@
     top: auto;
   }
   .prev {
-    left: 10vw;
+    left: 20vw;
   }
   .next {
     right: 10vw;
