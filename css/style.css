@@ -715,11 +715,11 @@ nav ul li:last-child {
 }
 
 .GetIT {
-  font-size: 150px;
+  font-size: 7.3vw;
   font-family: Montblanc-Regular;
   text-transform: uppercase;
-  margin: 0 0 363px 0;
-  padding-top: 363px;
+  margin: 0 0 10vh 0;
+  padding-top: 20vh;
 }
 
 .footerAll {
@@ -814,7 +814,7 @@ nav ul li:last-child {
     font-size: 9vw;
   }
   .PortfCenter {
-    width: 1240px;
+    width: 1012px;
   }
   .PortfCenter .PortfAll .portfol {
     margin-right: 20px;
@@ -944,9 +944,6 @@ nav ul li:last-child {
   }
   .MorePrj {
     right: 197px;
-  }
-  .GetIT {
-    display: none;
   }
   .footerAll {
     padding-top: 16vh;
@@ -1152,13 +1149,13 @@ nav ul li:last-child {
     right: 17px;
   }
   .GetIT {
-    display: none;
+    padding-top: 400px;
+    margin-bottom: 0;
   }
   .ball {
     bottom: -240px;
   }
   .footer {
-    padding-top: 20vh;
     font-size: 6.5vw;
     display: block;
   }
