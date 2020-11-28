@@ -27,12 +27,12 @@ function Start() {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 
-  $(".SlideButt").removeClass('SlideOff');
-  $('.SlideButt').addClass('SlideButtOn');
-  $(slidesOn[n]).removeClass("Unactive");
-  $(slidesOn[n]).addClass("SlideDown");
+  jQuery(".SlideButt").removeClass('SlideOff');
+  jQuery('.SlideButt').addClass('SlideButtOn');
+  jQuery(slidesOn[n]).removeClass("Unactive");
+  jQuery(slidesOn[n]).addClass("SlideDown");
   setTimeout(() => {
-    $(slidesOn[n]).removeClass("SlideDown");
+    jQuery(slidesOn[n]).removeClass("SlideDown");
   }, 1000);
 }
 // Next/previous controls
@@ -41,15 +41,15 @@ function plusSlides() {
   var slides = document.getElementsByClassName("imgArt");
   if (slideIndex >= slides.length - 1) {
     slideLast = slides.length - 1;
-    $(slidesOn[slideLast]).addClass("BackAnim");
-    $(slidesOn[0]).removeClass("Unactive");
-    $(slidesOn[0]).addClass("NextAnim");
+    jQuery(slidesOn[slideLast]).addClass("BackAnim");
+    jQuery(slidesOn[0]).removeClass("Unactive");
+    jQuery(slidesOn[0]).addClass("NextAnim");
     setTimeout(() => {
-      $(slidesOn[slideLast]).removeClass("BackAnim");
-      $(slidesOn[slideLast]).addClass("Unactive");
+      jQuery(slidesOn[slideLast]).removeClass("BackAnim");
+      jQuery(slidesOn[slideLast]).addClass("Unactive");
     }, 700);
     setTimeout(() => {
-      $(slidesOn[0]).removeClass("NextAnim");
+      jQuery(slidesOn[0]).removeClass("NextAnim");
     }, 800);
     setTimeout(() => {
       showSlides(slideIndex = 0);
@@ -59,15 +59,15 @@ function plusSlides() {
     }, 900);
   }
   else {
-    $(slidesOn[slideIndex]).addClass("BackAnim");
-    $(slidesOn[slideIndex + 1]).removeClass("Unactive");
-    $(slidesOn[slideIndex + 1]).addClass("NextAnim");
+    jQuery(slidesOn[slideIndex]).addClass("BackAnim");
+    jQuery(slidesOn[slideIndex + 1]).removeClass("Unactive");
+    jQuery(slidesOn[slideIndex + 1]).addClass("NextAnim");
     setTimeout(() => {
-      $(slidesOn[slideIndex]).removeClass("BackAnim");
-      $(slidesOn[slideIndex]).addClass("Unactive");
+      jQuery(slidesOn[slideIndex]).removeClass("BackAnim");
+      jQuery(slidesOn[slideIndex]).addClass("Unactive");
     }, 700);
     setTimeout(() => {
-      $(slidesOn[slideIndex + 1]).removeClass("NextAnim");
+      jQuery(slidesOn[slideIndex + 1]).removeClass("NextAnim");
     }, 800);
     setTimeout(() => {
       showSlides(slideIndex += 1);
@@ -85,15 +85,15 @@ function minusSlides() {
   var slides = document.getElementsByClassName("imgArt");
   if (slideIndex <= 0) {
     var a = slides.length - 1;
-  $(slidesOn[slideIndex]).addClass("NextAnimRev");
-  $(slidesOn[a]).removeClass("Unactive");
-  $(slidesOn[a]).addClass("BackAnimRev");
+  jQuery(slidesOn[slideIndex]).addClass("NextAnimRev");
+  jQuery(slidesOn[a]).removeClass("Unactive");
+  jQuery(slidesOn[a]).addClass("BackAnimRev");
   setTimeout(() => {
-    $(slidesOn[slideIndex]).removeClass("NextAnimRev");
-    $(slidesOn[slideIndex]).addClass("Unactive");
+    jQuery(slidesOn[slideIndex]).removeClass("NextAnimRev");
+    jQuery(slidesOn[slideIndex]).addClass("Unactive");
   }, 700);
   setTimeout(() => {
-    $(slidesOn[a]).removeClass("BackAnimRev");
+    jQuery(slidesOn[a]).removeClass("BackAnimRev");
   }, 800);
   setTimeout(() => {
     showSlides(slideIndex = a);
@@ -103,15 +103,15 @@ function minusSlides() {
   }, 900);
 }
 else {
-  $(slidesOn[slideIndex]).addClass("NextAnimRev");
-  $(slidesOn[slideIndex - 1]).removeClass("Unactive");
-  $(slidesOn[slideIndex - 1]).addClass("BackAnimRev");
+  jQuery(slidesOn[slideIndex]).addClass("NextAnimRev");
+  jQuery(slidesOn[slideIndex - 1]).removeClass("Unactive");
+  jQuery(slidesOn[slideIndex - 1]).addClass("BackAnimRev");
   setTimeout(() => {
-    $(slidesOn[slideIndex]).removeClass("NextAnimRev");
-    $(slidesOn[slideIndex]).addClass("Unactive");
+    jQuery(slidesOn[slideIndex]).removeClass("NextAnimRev");
+    jQuery(slidesOn[slideIndex]).addClass("Unactive");
   }, 700);
   setTimeout(() => {
-    $(slidesOn[slideIndex - 1]).removeClass("BackAnimRev");
+    jQuery(slidesOn[slideIndex - 1]).removeClass("BackAnimRev");
   }, 800);
   setTimeout(() => {
     showSlides(slideIndex -= 1);
@@ -130,3 +130,10 @@ function showSlides(n) {
 }
 
 
+function CloseSlides() {
+      jQuery(".SlideButt").addClass('SlideOff');
+      setTimeout(() => {
+        jQuery(".SlideButt").removeClass('SlideButtOn');
+        jQuery(".Slide").addClass("Unactive");
+      }, 900);
+    };

@@ -1,4 +1,4 @@
-$(document).ready(function () {
+jQuery(document).ready(function () {
 
     //Top triger
     var cntrTop = new ScrollMagic.Controller({
@@ -22,17 +22,17 @@ $(document).ready(function () {
     //Center triger
     var cntr = new ScrollMagic.Controller();
 
-    $('.art').each(function () {
+    jQuery('.art').each(function () {
 
         //Portf anim
-        let target1 = $(this).find(".ImgDivArt");
+        let target1 = jQuery(this).find(".ImgDivArt");
         var portfol = new TimelineMax()
             .add([
                 TweenMax.to(target1, { top: "0" })
             ])
 
         //Portf cont
-        var Portf = new ScrollMagic.Scene({ triggerElement: this, triggerHook: 0.9,duration: $('.art').height() })
+        var Portf = new ScrollMagic.Scene({ triggerElement: this, triggerHook: 0.9,duration: jQuery('.art').height() })
             .setTween(portfol)
             .addIndicators({
                 name: 'portfol',
@@ -52,7 +52,7 @@ var DarkTheme = new TimelineMax()
     ])
 
 //Dark cont
-var Dark = new ScrollMagic.Scene({ triggerElement: '.art:nth-child(3)', duration: '30%', offset: $('.art').height() })
+var Dark = new ScrollMagic.Scene({ triggerElement: '.art:nth-child(3)', duration: '30%', offset: jQuery('.art').height() })
     .setTween(DarkTheme)
     .addIndicators({
         name: 'BG COlor',
@@ -72,7 +72,7 @@ var LightTheme = new TimelineMax()
     ])
 
 //Light cont
-var Light = new ScrollMagic.Scene({ triggerElement: '.footer', duration: $('.allHref').height()*1.5, triggerHook: 0.9, offset: $('.allHref').height()})
+var Light = new ScrollMagic.Scene({ triggerElement: '.footer', duration: jQuery('.allHref').height()*1.5, triggerHook: 0.9, offset: jQuery('.allHref').height()})
     .setTween(LightTheme)
     .addIndicators({
         name: 'BG COlor light',
@@ -87,7 +87,7 @@ var Footer = new TimelineMax()
         TweenMax.to('.behance', { transform: 'translate(0, 0)' }),
     ])
 //Contact control
-var AAooterAnim = new ScrollMagic.Scene({ triggerElement: ".allHref", duration: $(".allHref").height() * 2, offset: 20 })
+var AAooterAnim = new ScrollMagic.Scene({ triggerElement: ".allHref", duration: jQuery(".allHref").height() * 2, offset: 20 })
     .setTween(Footer)
     .addIndicators({
         name: 'Href',
@@ -101,7 +101,7 @@ var Footer2 = new TimelineMax()
         TweenMax.to('.drib', { transform: 'translate(0, 0)' }),
     ])
 //Contact control
-var AAooterAnim2 = new ScrollMagic.Scene({ triggerElement: ".allHref", duration: $(".allHref").height() * 1.6, offset: 60 })
+var AAooterAnim2 = new ScrollMagic.Scene({ triggerElement: ".allHref", duration: jQuery(".allHref").height() * 1.6, offset: 60 })
     .setTween(Footer2)
     .addIndicators({
         name: 'Href',
@@ -115,7 +115,7 @@ var Footer3 = new TimelineMax()
         TweenMax.to('.insta', { transform: 'translate(0, 0)' }),
     ])
 //Contact control
-var AAooterAnim3 = new ScrollMagic.Scene({ triggerElement: ".allHref", duration: $(".allHref").height() * 1.6, offset: 100 })
+var AAooterAnim3 = new ScrollMagic.Scene({ triggerElement: ".allHref", duration: jQuery(".allHref").height() * 1.6, offset: 100 })
     .setTween(Footer3)
     .addIndicators({
         name: 'Href',

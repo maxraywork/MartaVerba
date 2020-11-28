@@ -7,92 +7,77 @@
     <title>Marta Verba</title>
     <link rel="shortcut icon" href="img/icon/logo.png" type="image/png">
     <!-- Styles -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="hover.css">
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
     <script src="libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-
 
     <script defer src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
-    <!-- <script defer src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script> -->
+    <script defer src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
     <script defer src="js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
     <script defer src="js/scrollmagic/uncompressed/plugins/animation.velocity.js"></script>
     <script defer src="js/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-
 </head>
 
 <body>
     <header>
-        <nav id="nav">
-            <div id="closeMenu">
-                <svg class="closeNav" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
-                    <g fill="none" fill-rule="evenodd">
-                        <g>
-                            <g transform="translate(-295 -20) translate(295 20)">
-                                <circle cx="30" cy="30" r="30" fill="#F3F3F3" />
-                                <path fill="#1A1C25" d="M13 29H47V31H13z" transform="rotate(-45 30 30)" />
-                                <path fill="#1A1C25" d="M13 29H47V31H13z" transform="rotate(45 30 30)" />
+        <div class="pinNav"></div>
+            <div class="mobNavigation">
+                <nav id="nav">
+                    <div id="closeMenu">
+                        <svg class="closeNav" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                            <g fill="none" fill-rule="evenodd">
+                                <g>
+                                    <g transform="translate(-295 -20) translate(295 20)">
+                                        <circle cx="30" cy="30" r="30" fill="#F3F3F3" />
+                                        <path fill="#1A1C25" d="M13 29H47V31H13z" transform="rotate(-45 30 30)" />
+                                        <path fill="#1A1C25" d="M13 29H47V31H13z" transform="rotate(45 30 30)" />
+                                    </g>
+                                </g>
                             </g>
-                        </g>
-                    </g>
-                </svg></div>
-            <ul>
-                <li class="menu">
-                    <a href="#portfolID" id="portfolio">
-                        <h2>
-                            portfolio<span class="MenuOn">
-                                <span id="pOn">*</span>
-                                <span id="pOff">/</span>
-                            </span>
-                        </h2>
-                    </a>
-                </li>
-                <li class="menu">
-                    <a href="art.html" id="art">
-                        <h2>
-                            art<span class="MenuOn">
-                                <span id="aOn">*</span>
-                                <span id="aOff">/</span>
-                            </span>
-                        </h2>
-                    </a>
-                </li>
-                <li class="menu">
-                    <a href="#aboutID" id="about">
-                        <h2>
-                            about<span class="MenuOn">
-                                <span id="abOn">*</span>
-                                <span id="abOff">/</span>
-                            </span>
-                        </h2>
-                    </a>
-                </li>
-                <li class="menu">
-                    <a href="#contactID" id="contact">
-                        <h2>
-                            contact<span class="MenuOn">
-                                <span id="cOn">*</span>
-                                <span id="cOff">/</span>
-                            </span>
-                        </h2>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                        </svg></div>
+                    <ul>
+                        <li class="menu">
+                            <a href="#portfolID" id="portfolio">
+                                <h2>portfolio<span class="MenuOn">
+                                        <span id="pOn">*</span>
+                                        <span id="pOff">/</span>
+                                    </span>
+                                </h2>
+                            </a>
+                        </li>
+                        <li class="menu <?php if (is_page_template('index.php')) echo 'active'; ?>">
+                            <a href="art.html" id="art">
+                                <h2>art<span class="MenuOn">
+                                        <span id="aOn">*</span>
+                                        <span id="aOff">/</span>
+                                    </span>
+                                </h2>
+                            </a>
+                        </li>
+                        <li class="menu">
+                            <a href="#aboutID" id="about">
+                                <h2>About<span class="MenuOn">
+                                        <span id="abOn">*</span>
+                                        <span id="abOff">/</span>
+                                    </span>
+                                </h2>
+                            </a>
+                        </li>
+                        <li class="menu">
+                            <a href="#contactID" id="contact">
+                                <h2>contact<span class="MenuOn">
+                                        <span id="cOn">*</span>
+                                        <span id="cOff">/</span>
+                                    </span>
+                                </h2>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     <main>
         <div class="cursor-point"></div>
         <div style="height: 100vh;" id="Header">
@@ -120,71 +105,80 @@
                 <h2 id="design" style="transform: translate(0, 150%);">Design</h2>
             </div>
             <div>
-            <a href="#portfolID">
-                <div class="scrollBallstart">scroll
-                    <div class="SBBGstart"></div>
-                </div>
-            </a>
-        </div>
+                <a href="#portfolID">
+                    <div class="scrollBallstart">scroll
+                        <div class="SBBGstart"></div>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <div id="PortfNav">
             <div class="PortfCenter">
                 <div class="PortfAll" id="portfolID">
                     <div class="portfol">
-                        <div><a href="##"><img src="img/progects/photo-01.png" alt="project"></a></div>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-02.png" alt="portfolio"></a>
+                        </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div><a href="##"><img src="img/progects/photo-02.png" alt="portfolio"></a></div>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-03.png" alt="portfolio"></a>
+                        </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div><a href="##"><img src="img/progects/photo-03.png" alt="portfolio"></a></div>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-04.png" alt="portfolio"></a>
+                        </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div><a href="##"><img src="img/progects/photo-04.png" alt="portfolio"></a></div>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-05.png" alt="portfolio"></a>
+                        </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div><a href="##"><img src="img/progects/photo-05.png" alt="portfolio"></a></div>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-06.png" alt="portfolio"></a>
+                        </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div><a href="##"><img src="img/progects/photo-06.png" alt="portfolio"></a></div>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-07.png" alt="portfolio"></a>
+                        </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div><a href="##"><img src="img/progects/photo-07.png" alt="portfolio"></a></div>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-08.png" alt="portfolio"></a>
+                        </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div><a href="##"><img src="img/progects/photo-08.png" alt="portfolio"></a></div>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-09.png" alt="portfolio"></a>
+                        </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div><a href="##"><img src="img/progects/photo-09.png" alt="portfolio"></a></div>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-10.png" alt="portfolio"></a>
+                        </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div><a href="##"><img src="img/progects/photo-10.png" alt="portfolio"></a></div>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-11.png" alt="portfolio"></a>
+                        </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div><a href="##"><img src="img/progects/photo-11.png" alt="portfolio"></a></div>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-12.png" alt="portfolio"></a>
+                        </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div><a href="##"><img src="img/progects/photo-12.png" alt="portfolio"></a></div>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-13.png" alt="portfolio"></a>
+                        </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div><a href="##"><img src="img/progects/photo-13.png" alt="portfolio"></a></div>
-                        <div class="textPortf">Website</div>
-                    </div>
-                    <div class="portfol">
-                        <div><a href="##"><img src="img/progects/photo-14.png" alt="portfolio"></a></div>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-14.png" alt="portfolio"></a>
+                        </div>
                         <div class="textPortf">Website</div>
                     </div>
                 </div>
@@ -197,8 +191,7 @@
             </div>
             <div class="Paint">
                 <div class="PaintAnimImg">
-                    <img src="img/Paint/gallery-photo2.png" alt="gallary"><img src="img/Paint/gallery-photo.png"
-                        alt="gallary" class="paint2">
+                    <img src="img/Paint/gallery-photo.jpg" alt="gallary">
                     <div class="PaintBg"></div>
                 </div>
                 <a href="art.html">
@@ -233,13 +226,14 @@
                 <div class="ball"></div>
             </div>
         </div>
+        <div class="GetIT"><a>get in touch</a></div>
     </main>
     <footer>
         <div class="footerAll">
             <div class="footer" id="contactID">
-                <a href="##">
-                    <h3>martaverba@outlook.com</h3>
-                </a>
+                
+                    <h3><a href="##">martaverba@outlook.com</a></h3>
+                
                 <div class="allHref">
                     <div class="behance">
                         <a href="##">
@@ -309,153 +303,160 @@
         </defs>
         <circle class="cursor__inner" cx="140" cy="140" r="50"></circle>
     </svg>
+    <div id="container"></div>
 
     <script>
 
-        //cursor
-        window.addEventListener("mousemove", function (evt) {
-            var x = evt.x
-            var y = evt.y
-            var cursorPoint = document.querySelector(".cursor-point")
-            setTimeout(() => {
-                cursorPoint.style.left = x + "px"
-                cursorPoint.style.top = y + "px"
-            }, 60);
-        });
-
-        var myHash = location.hash; //получаем значение хеша
-        location.hash = ''; //очищаем хеш
-        if (myHash[1] != undefined) {
-            $(document).ready(function () {
-            $('html, body').animate({ scrollTop: $(myHash).offset().top }, 500); //скроллим за полсекунды
-            }); //проверяем, есть ли в хеше какое-то значение
-        };
-
-        //Anim start
-        $(document).ready(function () {
-            $('#MV').css({ 'transition': '1s', 'transform': 'translate(0, 0)' });
-            setTimeout("$('#design').css({'transition': '1s', 'transform': 'translate(0, 0)'})", 200);
-            setTimeout("$('#design,#MV').css({'transition': '0s'})", 1500);
-        });
-
-        //nav
-        $(document).ready(function () {
-            if (screen.width <= 700) {
-                $('header').css('display', 'none');
-                setTimeout(() => {
-                    $('header').css('transform', 'translateY(-120vh)');
-                }, 100);
-                $('.menuMob').click(
-                    function () {
-                        $('header').css('display', 'block');
-                        setTimeout(() => {
-                            $('header').css('transform', 'translateY(0)');
-                        }, 100);
-                    }
-                );
-                $('#closeMenu').click(
-                    function () {
-                        $('header').css('transform', 'translateY(-120vh)');
-                        setTimeout(() => {
-                            $('header').css('display', 'none');
-                        }, 1000);
-                    }
-                );
-                $('.menu').click(
-                    function () {
-                        setTimeout(() => {
-                            $('header').css('display', 'none');
-                        }, 1000);
-                        $('header').css('transform', 'translateY(-120vh)');
-                    }
-                );
+        //ART
+        //generate slide show
+        var i,
+              slides = document.getElementsByClassName("imgArt");
+            for (i = 0; i < slides.length; i++) {
+              document.getElementById("SlideAll").insertAdjacentHTML("beforeend",
+                "<img src='" + slides[i].getAttribute("src") + "' alt='slide' class='Slide Unactive'>");
             }
-        });
-        $(window).resize(function Nav() {
-            if (screen.width <= 700) {
-                $('header').css('display', 'none');
-                setTimeout(() => {
-                    $('header').css('transform', 'translateY(-120vh)');
-                }, 100);
-                $('.menuMob').click(
-                    function () {
-                        $('header').css('display', 'block');
-                        setTimeout(() => {
-                            $('header').css('transform', 'translateY(0)');
-                        }, 100);
-                    }
-                );
-                $('#closeMenu').click(
-                    function () {
-                        $('header').css('transform', 'translateY(-120vh)');
-                        setTimeout(() => {
-                            $('header').css('display', 'none');
-                        }, 1000);
-                    }
-                );
-                $('.menu').click(
-                    function () {
-                        setTimeout(() => {
-                            $('header').css('display', 'none');
-                        }, 1000);
-                        $('header').css('transform', 'translateY(-120vh)');
-                    }
-                );
-            }
-            else {
-                $('header').css('transform', 'translateY(0)');
-            }
-        });
-
-
-        //Portfol Mob
-        var h = 5;
-        $(".PortfButt").click(function () {
-            var portfol = $(".portfol");
-            for (let a = h + 4; a >= h; a--) {
-                $(portfol[a]).css("display", "block");
-            }
-            h = h + 4;
-            if ($('.portfol:visible').length >= portfol.length) {
-                $(".PortfButt").css("display", "none");
-            }
-        });
-        //End Portfol Mob
-
-        //CUrsor script 
-        $(document).scroll(function () {
-
-        });
-
-
-        //SmoothScroll
-        $(document).ready(function () {
-            // Добавить плавную прокрутку до всех ссылок
-            $("a").on('click', function (event) {
-
-                // Убедись в этом что .hash имеет значение перед переопределением поведения по умолчанию
-                if (this.hash !== "") {
-                    // Запретить поведение щелчка якоря по умолчанию
-                    event.preventDefault();
-
-                    // Хранить хэш
-                    var hash = this.hash;
-
-                    // Использование метода animate() jQuery для добавления плавной прокрутки страницы
-                    // Необязательное число (800) указывает количество миллисекунд, необходимых для прокрутки до указанной области
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 1000, "easeInOutCubic", function () {
-
-                        // Добавить хэш (#) для URL-адреса после завершения прокрутки (поведение щелчка по умолчанию)
-                        window.location.hash = hash;
+            var a = 0;
+            jQuery(".imgArt").each(function () {
+              a++;
+              jQuery(this).attr("onclick", "currentSlide(" + (a - 1) + ")");
+            });
+        
+        
+        
+                jQuery(document).ready(function () {
+                    jQuery('.pinNav').css("height", jQuery("nav").height() + 45 );
+                    if (screen.width <= 700) { jQuery('.pinNav').css("height", jQuery(".menuMob").height() + 59 ) };
+                });
+        
+                //cursor
+                window.addEventListener("mousemove", function (evt) {
+                    var x = evt.x
+                    var y = evt.y
+                    var cursorPoint = document.querySelector(".cursor-point")
+                    setTimeout(() => {
+                        cursorPoint.style.left = x + "px"
+                        cursorPoint.style.top = y + "px"
+                    }, 60);
+                });
+        
+                //Timer for scroll
+                var myHash = location.hash; 
+                location.hash = '';
+                if (myHash[1] != undefined) {
+                    jQuery(document).ready(function () {
+                         jQuery('html, body').animate({ scrollTop:  jQuery(myHash).offset().top }, 500);
                     });
-                } // Конец, если
+                };
+        
+                //Anim start
+                jQuery(document).ready(function () {
+                     jQuery('#MV').css({ 'transition': '1s', 'transform': 'translate(0, 0)' });
+                    setTimeout(" jQuery('#design').css({'transition': '1s', 'transform': 'translate(0, 0)'})", 200);
+                    setTimeout(" jQuery('#design,#MV').css({'transition': '0s'})", 1500);
+                });
+        
+                //nav
+                jQuery(document).ready(function () {
+                    if (screen.width <= 700) {
+                         jQuery('.mobNavigation').css('display', 'none');
+                        setTimeout(() => {
+                             jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                        }, 100);
+                         jQuery('.menuMob').click(
+                            function () {
+                                 jQuery('.mobNavigation').css('display', 'block');
+                                setTimeout(() => {
+                                     jQuery('.mobNavigation').css('transform', 'translateY(0)');
+                                }, 100);
+                            }
+                        );
+                         jQuery('#closeMenu').click(
+                            function () {
+                                 jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                                setTimeout(() => {
+                                     jQuery('.mobNavigation').css('display', 'none');
+                                }, 1000);
+                            }
+                        );
+                         jQuery('.menu').click(
+                            function () {
+                                setTimeout(() => {
+                                     jQuery('.mobNavigation').css('display', 'none');
+                                }, 1000);
+                                 jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                            }
+                        );
+                    }
+                });
+                jQuery(window).resize(function Nav() {
+                    if (screen.width <= 700) {
+                         jQuery('.mobNavigation').css('display', 'none');
+                        setTimeout(() => {
+                             jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                        }, 100);
+                         jQuery('.menuMob').click(
+                            function () {
+                                 jQuery('.mobNavigation').css('display', 'block');
+                                setTimeout(() => {
+                                     jQuery('.mobNavigation').css('transform', 'translateY(0)');
+                                }, 100);
+                            }
+                        );
+                         jQuery('#closeMenu').click(
+                            function () {
+                                 jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                                setTimeout(() => {
+                                     jQuery('.mobNavigation').css('display', 'none');
+                                }, 1000);
+                            }
+                        );
+                         jQuery('.menu').click(
+                            function () {
+                                setTimeout(() => {
+                                     jQuery('.mobNavigation').css('display', 'none');
+                                }, 1000);
+                                 jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                            }
+                        );
+                    }
+                });
+        
+        
+                //Portfol Mob
+                var h = 5;
+                jQuery(".PortfButt").click(function () {
+                    var portfol =  jQuery(".portfol");
+                    for (let a = h + 4; a >= h; a--) {
+                         jQuery(portfol[a]).css("display", "block");
+                    }
+                    h = h + 4;
+                    if ( jQuery('.portfol:visible').length >= portfol.length) {
+                         jQuery(".PortfButt").css("display", "none");
+                    }
+                });
+                //End Portfol Mob
+        
+        
+                //SmoothScroll
+                jQuery(function(){
+            jQuery('a[href*=#]').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+                && location.hostname == this.hostname) {
+                    var jQuerytarget = jQuery(this.hash);
+                    jQuerytarget = jQuerytarget.length && jQuerytarget || jQuery('[name=' + this.hash.slice(1) +']');
+                    if (jQuerytarget.length) {
+                        var targetOffset = jQuerytarget.offset().top;
+                        jQuery('html,body').animate({scrollTop: targetOffset}, {
+                  duration: 800, // продолжительность анимации
+                  easing: "swing", // скорость анимации
+                  });
+                        return false;
+                    }
+                }
             });
         });
-    </script>
+            </script>
     <script src="js/main.js"></script>
-    <!-- <script src="index.js"></script> -->
     <script src="cursor.js"></script>
 </body>
 

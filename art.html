@@ -7,85 +7,72 @@
   <title>Marta Verba - Art</title>
   <link rel="shortcut icon" href="img/icon/logo.png" type="image/png" />
   <!-- Styles -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="styleArt.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/styleArt.css" />
   <!-- Scripts -->
   <script src="js/slideShow.js"></script>
   <script src="libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header class="navArt">
-    <nav id="nav">
-      <div id="closeMenu">
-        <svg class="closeNav" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
-        <g fill="none" fill-rule="evenodd">
-            <g>
-                <g transform="translate(-295 -20) translate(295 20)">
-                    <circle cx="30" cy="30" r="30" fill="#F3F3F3"/>
-                    <path fill="#1A1C25" d="M13 29H47V31H13z" transform="rotate(-45 30 30)"/>
-                    <path fill="#1A1C25" d="M13 29H47V31H13z" transform="rotate(45 30 30)"/>
-                </g>
-            </g>
-        </g>
-    </svg></div>
-      <ul>
-        <li class="menu">
-          <a href="index.html" id="portfolio">
-            <h2>
-              portfolio<span class="MenuOn">
-                <span id="pOn">*</span>
-                <span id="pOff">/</span>
-              </span>
-            </h2>
-          </a>
-        </li>
-        <li class="menu active">
-          <a href="##" id="art">
-            <h2>
-              art<span class="MenuOn">
-                <span id="aOn">*</span>
-                <span id="aOff">/</span>
-              </span>
-            </h2>
-          </a>
-        </li>
-        <li class="menu">
-          <a href="index.html#aboutID" id="about">
-            <h2>
-              about<span class="MenuOn">
-                <span id="abOn">*</span>
-                <span id="abOff">/</span>
-              </span>
-            </h2>
-          </a>
-        </li>
-        <li class="menu">
-          <a href="index.html#contactID" id="contact">
-            <h2>
-              contact<span class="MenuOn">
-                <span id="cOn">*</span>
-                <span id="cOff">/</span>
-              </span>
-            </h2>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+  <header>
+    <div class="pinNav"></div>
+        <div class="mobNavigation">
+            <nav id="nav" class="navArt">
+                <div id="closeMenu">
+                    <svg class="closeNav" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                        <g fill="none" fill-rule="evenodd">
+                            <g>
+                                <g transform="translate(-295 -20) translate(295 20)">
+                                    <circle cx="30" cy="30" r="30" fill="#F3F3F3" />
+                                    <path fill="#1A1C25" d="M13 29H47V31H13z" transform="rotate(-45 30 30)" />
+                                    <path fill="#1A1C25" d="M13 29H47V31H13z" transform="rotate(45 30 30)" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg></div>
+                <ul>
+                    <li class="menu">
+                        <a href="index.html#portfolID" id="portfolio">
+                            <h2>portfolio<span class="MenuOn">
+                                    <span id="pOn">*</span>
+                                    <span id="pOff">/</span>
+                                </span>
+                            </h2>
+                        </a>
+                    </li>
+                    <li class="menu active">
+                        <a href="art.html" id="art">
+                            <h2>art<span class="MenuOn">
+                                    <span id="aOn">*</span>
+                                    <span id="aOff">/</span>
+                                </span>
+                            </h2>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <a href="index.html#aboutID" id="about">
+                            <h2>About<span class="MenuOn">
+                                    <span id="abOn">*</span>
+                                    <span id="abOff">/</span>
+                                </span>
+                            </h2>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <a href="index.html#contactID" id="contact">
+                            <h2>contact<span class="MenuOn">
+                                    <span id="cOn">*</span>
+                                    <span id="cOff">/</span>
+                                </span>
+                            </h2>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+  <main id="top">
       <div class="cursor-point"></div>
       <div>
         <svg class="menuMob navMobArt" id="menuMob" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
@@ -136,6 +123,17 @@
         <div class="art">
           <div class="ImgDivArt">
             <a href="##"><img src="img/Art/Slide/4.4.jpg" alt="art" class="imgArt" />
+              <div class="BGArt"></div>
+            </a>
+          </div>
+          <div class="textArt">
+            <div>canvas, acrylic paint - 50x100 cm</div>
+            <div>Waiting</div>
+          </div>
+        </div>
+        <div class="art">
+          <div class="ImgDivArt">
+            <a href="##"><img src="img/Art/Slide/5.5.jpg" alt="art" class="imgArt" />
               <div class="BGArt"></div>
             </a>
           </div>
@@ -206,197 +204,240 @@
   </main>
   <footer>
     <div class="footerAll">
-      <div class="footer" id="contactID">
-        <a href="##">
-          <h3>martaverba@outlook.com</h3>
-        </a>
-        <div class="allHref">
-          <div class="behance">
-            <a href="##">
-              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" viewBox="0 0 80 50">
-                <g fill="none" fill-rule="evenodd">
-                    <g class="behanceSvg">
-                        <g>
-                            <g>
-                                <path d="M61.835 11.866c3.19-.005 6.055.558 8.6 1.685 2.555 1.121 4.655 2.896 6.31 5.318 1.51 2.138 2.48 4.616 2.92 7.432.26 1.645.36 4.032.32 7.137H53.35c.16 3.604 1.42 6.136 3.83 7.582 1.46.902 3.21 1.356 5.275 1.356 2.17 0 3.94-.549 5.3-1.645.75-.598 1.405-1.42 1.97-2.473h9.76c-.26 2.129-1.445 4.297-3.54 6.5-3.275 3.49-7.86 5.239-13.755 5.239-4.87 0-9.16-1.47-12.875-4.421-3.73-2.946-5.585-7.746-5.585-14.39 0-6.231 1.68-11.011 5.035-14.336 3.365-3.314 7.715-4.984 13.07-4.984zM23.89.152c6.03.09 10.295 1.815 12.815 5.184 1.51 2.069 2.265 4.536 2.265 7.422 0 2.966-.755 5.358-2.285 7.163-.86 1.002-2.115 1.929-3.775 2.761 2.52.907 4.42 2.338 5.715 4.292 1.28 1.954 1.925 4.331 1.925 7.122 0 2.881-.735 5.468-2.205 7.751-.93 1.51-2.1 2.791-3.5 3.823-1.575 1.187-3.435 1.999-5.585 2.443-2.15.438-4.475.653-6.985.653H0V.152zm-1.865 27.215H9.855v12.965H21.86c2.145 0 3.82-.284 5.01-.857 2.17-1.067 3.25-3.08 3.25-6.071 0-2.537-1.045-4.272-3.145-5.22-1.18-.522-2.83-.802-4.95-.817zm39.82-7.755c-2.445.005-4.355.693-5.705 2.058-1.35 1.371-2.2 3.225-2.55 5.563h16.475c-.175-2.497-1.03-4.386-2.545-5.687-1.535-1.291-3.42-1.934-5.675-1.934zM20.615 8.596H9.855v10.727h12.02c2.14 0 3.885-.404 5.23-1.207 1.335-.802 2.01-2.228 2.01-4.266 0-2.273-.885-3.764-2.655-4.496-1.53-.504-3.48-.758-5.845-.758zm51.69-6.176v6.051H51.12v-6.05h21.185z" transform="translate(-450 -3240) translate(20 3078) translate(430 162)"/>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </svg>
-            </a>
-          </div>
-          <div class="drib">
-            <a href="##">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-                <g fill="none" fill-rule="evenodd">
-                    <g class="behanceSvg">
-                        <g>
-                            <g>
-                                <path d="M34.07 48.177c.042-.013.082-.03.124-.044C59.642 38.043 52.602 0 25 0 11.148 0 0 11.27 0 24.951c0 17.314 17.57 29.67 34.07 23.226zm-23.068-6.469c1.775-2.977 7.519-11.378 17.323-14.276 2.05 5.217 3.488 11.303 3.63 18.204-7.43 2.493-15.265.815-20.953-3.928zm24.025 2.626c-.273-6.63-1.63-12.51-3.562-17.605 4.337-.676 9.358-.225 15.052 2.052-1.21 6.78-5.555 12.48-11.49 15.553zm11.817-18.778c-6.271-2.351-11.798-2.644-16.582-1.734-.74-1.663-1.516-3.262-2.34-4.734 7.34-2.926 11.678-6.492 13.62-8.38 3.427 3.96 5.462 9.085 5.302 14.848zM39.323 8.488c-1.767 1.678-5.927 5.067-13.042 7.838-3.487-5.505-7.216-9.39-9.579-11.564 7.558-3.107 16.275-1.78 22.62 3.726zM13.715 6.286c1.783 1.565 5.698 5.325 9.475 11.138-5.188 1.668-11.692 2.893-19.603 3.065C4.846 14.472 8.604 9.373 13.715 6.286zM3.192 23.62c8.854-.144 16.02-1.54 21.685-3.427.783 1.37 1.527 2.863 2.242 4.414-9.865 3.136-16.03 11.23-18.39 14.886-3.808-4.242-5.908-9.777-5.537-15.873z" transform="translate(-590 -3240) translate(20 3078) translate(570 162)"/>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </svg>
+        <div class="footer" id="contactID">
             
-            </a>
-          </div>
-          <div class="insta">
-            <a href="##">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-                <g fill="none" fill-rule="evenodd">
-                    <g class="behanceSvg">
-                        <g>
-                            <g>
-                                <path d="M26.892.001c5.069.006 5.997.041 8.396.155 2.65.118 4.464.547 6.052 1.162 1.657.625 3.168 1.612 4.415 2.881 1.277 1.25 2.252 2.754 2.885 4.434.615 1.582 1.043 3.408 1.16 6.064.103 2.34.123 3.28.126 8.063v3.788c-.004 5.39-.038 6.306-.145 8.755-.117 2.656-.546 4.472-1.16 6.064-1.296 3.36-3.947 6.016-7.3 7.315-1.58.615-3.402 1.044-6.053 1.162-2.443.107-3.358.14-8.738.145h-3.09c-5.379-.004-6.294-.038-8.737-.145-2.651-.118-4.464-.547-6.053-1.162-1.657-.625-3.168-1.612-4.415-2.881-1.267-1.25-2.251-2.754-2.885-4.434C.736 39.785.307 37.96.19 35.303.085 32.909.05 31.979.045 26.9v-3.8c.006-5.08.041-6.01.155-8.413.117-2.656.545-4.472 1.16-6.064.624-1.66 1.608-3.174 2.875-4.424C5.482 2.92 6.983 1.943 8.66 1.31 10.239.693 12.061.263 14.712.145c2.39-.105 3.317-.14 8.386-.145zm-1.074 4.54h-1.606c-5.923.003-6.753.034-9.275.146-2.427.108-3.753.518-4.63.86-1.082.4-2.057 1.035-2.865 1.865-.839.801-1.472 1.787-1.872 2.871-.341.88-.75 2.198-.857 4.639-.108 2.408-.141 3.281-.146 8.548v3.099c.005 5.265.038 6.131.146 8.548.107 2.432.516 3.76.857 4.639.4 1.084 1.033 2.06 1.862 2.871.799.83 1.783 1.465 2.865 1.865.877.342 2.193.752 4.63.86 2.458.11 3.314.142 8.897.146h2.362c5.582-.004 6.43-.036 8.897-.147 2.427-.107 3.752-.517 4.63-.859 2.173-.84 3.898-2.568 4.736-4.746.342-.879.75-2.197.858-4.639.112-2.526.144-3.35.146-9.284v-1.607c-.002-5.936-.034-6.767-.146-9.294-.107-2.432-.516-3.76-.858-4.639-.4-1.084-1.033-2.06-1.861-2.871-.8-.83-1.784-1.465-2.866-1.865-.877-.342-2.193-.752-4.63-.86-2.512-.112-3.342-.143-9.274-.146zm-.823 7.617c7.076 0 12.817 5.752 12.817 12.842 0 7.09-5.74 12.842-12.817 12.842-7.076 0-12.817-5.752-12.817-12.842 0-7.09 5.741-12.842 12.817-12.842zm0 4.512c-4.59 0-8.314 3.73-8.314 8.33s3.724 8.33 8.314 8.33S33.31 29.6 33.31 25s-3.723-8.33-8.314-8.33zM38.32 8.652c1.652 0 2.992 1.343 2.992 2.998 0 1.656-1.34 2.998-2.992 2.998-1.653 0-2.993-1.342-2.993-2.998 0-1.655 1.34-2.998 2.993-2.998z" transform="translate(-700 -3240) translate(20 3078) translate(680 162)"/>
+                <h3><a href="##">martaverba@outlook.com</a></h3>
+            
+            <div class="allHref">
+                <div class="behance">
+                    <a href="##">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" viewBox="0 0 80 50">
+                            <g fill="none" fill-rule="evenodd">
+                                <g class="behanceSvg">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M61.835 11.866c3.19-.005 6.055.558 8.6 1.685 2.555 1.121 4.655 2.896 6.31 5.318 1.51 2.138 2.48 4.616 2.92 7.432.26 1.645.36 4.032.32 7.137H53.35c.16 3.604 1.42 6.136 3.83 7.582 1.46.902 3.21 1.356 5.275 1.356 2.17 0 3.94-.549 5.3-1.645.75-.598 1.405-1.42 1.97-2.473h9.76c-.26 2.129-1.445 4.297-3.54 6.5-3.275 3.49-7.86 5.239-13.755 5.239-4.87 0-9.16-1.47-12.875-4.421-3.73-2.946-5.585-7.746-5.585-14.39 0-6.231 1.68-11.011 5.035-14.336 3.365-3.314 7.715-4.984 13.07-4.984zM23.89.152c6.03.09 10.295 1.815 12.815 5.184 1.51 2.069 2.265 4.536 2.265 7.422 0 2.966-.755 5.358-2.285 7.163-.86 1.002-2.115 1.929-3.775 2.761 2.52.907 4.42 2.338 5.715 4.292 1.28 1.954 1.925 4.331 1.925 7.122 0 2.881-.735 5.468-2.205 7.751-.93 1.51-2.1 2.791-3.5 3.823-1.575 1.187-3.435 1.999-5.585 2.443-2.15.438-4.475.653-6.985.653H0V.152zm-1.865 27.215H9.855v12.965H21.86c2.145 0 3.82-.284 5.01-.857 2.17-1.067 3.25-3.08 3.25-6.071 0-2.537-1.045-4.272-3.145-5.22-1.18-.522-2.83-.802-4.95-.817zm39.82-7.755c-2.445.005-4.355.693-5.705 2.058-1.35 1.371-2.2 3.225-2.55 5.563h16.475c-.175-2.497-1.03-4.386-2.545-5.687-1.535-1.291-3.42-1.934-5.675-1.934zM20.615 8.596H9.855v10.727h12.02c2.14 0 3.885-.404 5.23-1.207 1.335-.802 2.01-2.228 2.01-4.266 0-2.273-.885-3.764-2.655-4.496-1.53-.504-3.48-.758-5.845-.758zm51.69-6.176v6.051H51.12v-6.05h21.185z"
+                                                transform="translate(-450 -3240) translate(20 3078) translate(430 162)" />
+                                        </g>
+                                    </g>
+                                </g>
                             </g>
-                        </g>
-                    </g>
-                </g>
-            </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="CopyFooter">&copy; Copyright 2020 All rights reserved.</div>
-    </div>
-  </footer>
+                        </svg>
+                    </a>
+                </div>
+                <div class="drib">
+                    <a href="##">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                            <g fill="none" fill-rule="evenodd">
+                                <g class="behanceSvg">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M34.07 48.177c.042-.013.082-.03.124-.044C59.642 38.043 52.602 0 25 0 11.148 0 0 11.27 0 24.951c0 17.314 17.57 29.67 34.07 23.226zm-23.068-6.469c1.775-2.977 7.519-11.378 17.323-14.276 2.05 5.217 3.488 11.303 3.63 18.204-7.43 2.493-15.265.815-20.953-3.928zm24.025 2.626c-.273-6.63-1.63-12.51-3.562-17.605 4.337-.676 9.358-.225 15.052 2.052-1.21 6.78-5.555 12.48-11.49 15.553zm11.817-18.778c-6.271-2.351-11.798-2.644-16.582-1.734-.74-1.663-1.516-3.262-2.34-4.734 7.34-2.926 11.678-6.492 13.62-8.38 3.427 3.96 5.462 9.085 5.302 14.848zM39.323 8.488c-1.767 1.678-5.927 5.067-13.042 7.838-3.487-5.505-7.216-9.39-9.579-11.564 7.558-3.107 16.275-1.78 22.62 3.726zM13.715 6.286c1.783 1.565 5.698 5.325 9.475 11.138-5.188 1.668-11.692 2.893-19.603 3.065C4.846 14.472 8.604 9.373 13.715 6.286zM3.192 23.62c8.854-.144 16.02-1.54 21.685-3.427.783 1.37 1.527 2.863 2.242 4.414-9.865 3.136-16.03 11.23-18.39 14.886-3.808-4.242-5.908-9.777-5.537-15.873z"
+                                                transform="translate(-590 -3240) translate(20 3078) translate(570 162)" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
 
-  <svg class="cursor" width="280" height="280" viewBox="0 0 280 280">
+                    </a>
+                </div>
+                <div class="insta">
+                    <a href="##">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                            <g fill="none" fill-rule="evenodd">
+                                <g class="behanceSvg">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M26.892.001c5.069.006 5.997.041 8.396.155 2.65.118 4.464.547 6.052 1.162 1.657.625 3.168 1.612 4.415 2.881 1.277 1.25 2.252 2.754 2.885 4.434.615 1.582 1.043 3.408 1.16 6.064.103 2.34.123 3.28.126 8.063v3.788c-.004 5.39-.038 6.306-.145 8.755-.117 2.656-.546 4.472-1.16 6.064-1.296 3.36-3.947 6.016-7.3 7.315-1.58.615-3.402 1.044-6.053 1.162-2.443.107-3.358.14-8.738.145h-3.09c-5.379-.004-6.294-.038-8.737-.145-2.651-.118-4.464-.547-6.053-1.162-1.657-.625-3.168-1.612-4.415-2.881-1.267-1.25-2.251-2.754-2.885-4.434C.736 39.785.307 37.96.19 35.303.085 32.909.05 31.979.045 26.9v-3.8c.006-5.08.041-6.01.155-8.413.117-2.656.545-4.472 1.16-6.064.624-1.66 1.608-3.174 2.875-4.424C5.482 2.92 6.983 1.943 8.66 1.31 10.239.693 12.061.263 14.712.145c2.39-.105 3.317-.14 8.386-.145zm-1.074 4.54h-1.606c-5.923.003-6.753.034-9.275.146-2.427.108-3.753.518-4.63.86-1.082.4-2.057 1.035-2.865 1.865-.839.801-1.472 1.787-1.872 2.871-.341.88-.75 2.198-.857 4.639-.108 2.408-.141 3.281-.146 8.548v3.099c.005 5.265.038 6.131.146 8.548.107 2.432.516 3.76.857 4.639.4 1.084 1.033 2.06 1.862 2.871.799.83 1.783 1.465 2.865 1.865.877.342 2.193.752 4.63.86 2.458.11 3.314.142 8.897.146h2.362c5.582-.004 6.43-.036 8.897-.147 2.427-.107 3.752-.517 4.63-.859 2.173-.84 3.898-2.568 4.736-4.746.342-.879.75-2.197.858-4.639.112-2.526.144-3.35.146-9.284v-1.607c-.002-5.936-.034-6.767-.146-9.294-.107-2.432-.516-3.76-.858-4.639-.4-1.084-1.033-2.06-1.861-2.871-.8-.83-1.784-1.465-2.866-1.865-.877-.342-2.193-.752-4.63-.86-2.512-.112-3.342-.143-9.274-.146zm-.823 7.617c7.076 0 12.817 5.752 12.817 12.842 0 7.09-5.74 12.842-12.817 12.842-7.076 0-12.817-5.752-12.817-12.842 0-7.09 5.741-12.842 12.817-12.842zm0 4.512c-4.59 0-8.314 3.73-8.314 8.33s3.724 8.33 8.314 8.33S33.31 29.6 33.31 25s-3.723-8.33-8.314-8.33zM38.32 8.652c1.652 0 2.992 1.343 2.992 2.998 0 1.656-1.34 2.998-2.992 2.998-1.653 0-2.993-1.342-2.993-2.998 0-1.655 1.34-2.998 2.993-2.998z"
+                                                transform="translate(-700 -3240) translate(20 3078) translate(680 162)" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="CopyFooter">&copy; Copyright 2020 All rights reserved.</div>
+    </div>
+</footer>
+
+<svg class="cursor" width="280" height="280" viewBox="0 0 280 280">
     <defs>
-      <filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
-        <feTurbulence type="fractalNoise" baseFrequency="0.02 0.15" numOctaves="3" result="warp"></feTurbulence>
-        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="0" in="SourceGraphic" in2="warp"></feDisplacementMap>
-      </filter>
+        <filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
+            <feTurbulence type="fractalNoise" baseFrequency="0.02 0.15" numOctaves="3" result="warp"></feTurbulence>
+            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="0" in="SourceGraphic" in2="warp">
+            </feDisplacementMap>
+        </filter>
     </defs>
     <circle class="cursor__inner" cx="140" cy="140" r="50"></circle>
-  </svg>
-  <script src="cursor.js"></script>
+</svg>
+<div id="container"></div>
 
+<script>
 
-  <script>
-
-    //cursor
-    window.addEventListener("mousemove", function(evt) {
-    var x = evt.x
-    var y = evt.y
-    var cursorPoint = document.querySelector(".cursor-point")
-    setTimeout(() => {
-      cursorPoint.style.left = x + "px"
-      cursorPoint.style.top = y + "px"
-    }, 60);
-  });
-
+    //ART
     //generate slide show
     var i,
-      slides = document.getElementsByClassName("imgArt");
-    for (i = 0; i < slides.length; i++) {
-      document.getElementById("SlideAll").insertAdjacentHTML("beforeend",
-        "<img src='" + slides[i].getAttribute("src") + "' alt='slide' class='Slide Unactive'>");
-    }
-    var a = 0;
-    $(".imgArt").each(function () {
-      a++;
-      $(this).attr("onclick", "currentSlide(" + (a - 1) + ")");
+          slides = document.getElementsByClassName("imgArt");
+        for (i = 0; i < slides.length; i++) {
+          document.getElementById("SlideAll").insertAdjacentHTML("beforeend",
+            "<img src='" + slides[i].getAttribute("src") + "' alt='slide' class='Slide Unactive'>");
+        }
+        var a = 0;
+        jQuery(".imgArt").each(function () {
+          a++;
+          jQuery(this).attr("onclick", "currentSlide(" + (a - 1) + ")");
+        });
+    
+    
+    
+            jQuery(document).ready(function () {
+                jQuery('.pinNav').css("height", jQuery("nav").height() + 45 );
+                if (screen.width <= 700) { jQuery('.pinNav').css("height", jQuery(".menuMob").height() + 59 ) };
+            });
+    
+            //cursor
+            window.addEventListener("mousemove", function (evt) {
+                var x = evt.x
+                var y = evt.y
+                var cursorPoint = document.querySelector(".cursor-point")
+                setTimeout(() => {
+                    cursorPoint.style.left = x + "px"
+                    cursorPoint.style.top = y + "px"
+                }, 60);
+            });
+    
+            //Timer for scroll
+            var myHash = location.hash; 
+            location.hash = '';
+            if (myHash[1] != undefined) {
+                jQuery(document).ready(function () {
+                     jQuery('html, body').animate({ scrollTop:  jQuery(myHash).offset().top }, 500);
+                });
+            };
+    
+            //Anim start
+            jQuery(document).ready(function () {
+                 jQuery('#MV').css({ 'transition': '1s', 'transform': 'translate(0, 0)' });
+                setTimeout(" jQuery('#design').css({'transition': '1s', 'transform': 'translate(0, 0)'})", 200);
+                setTimeout(" jQuery('#design,#MV').css({'transition': '0s'})", 1500);
+            });
+    
+            //nav
+            jQuery(document).ready(function () {
+                if (screen.width <= 700) {
+                     jQuery('.mobNavigation').css('display', 'none');
+                    setTimeout(() => {
+                         jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                    }, 100);
+                     jQuery('.menuMob').click(
+                        function () {
+                             jQuery('.mobNavigation').css('display', 'block');
+                            setTimeout(() => {
+                                 jQuery('.mobNavigation').css('transform', 'translateY(0)');
+                            }, 100);
+                        }
+                    );
+                     jQuery('#closeMenu').click(
+                        function () {
+                             jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                            setTimeout(() => {
+                                 jQuery('.mobNavigation').css('display', 'none');
+                            }, 1000);
+                        }
+                    );
+                     jQuery('.menu').click(
+                        function () {
+                            setTimeout(() => {
+                                 jQuery('.mobNavigation').css('display', 'none');
+                            }, 1000);
+                             jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                        }
+                    );
+                }
+            });
+            jQuery(window).resize(function Nav() {
+                if (screen.width <= 700) {
+                     jQuery('.mobNavigation').css('display', 'none');
+                    setTimeout(() => {
+                         jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                    }, 100);
+                     jQuery('.menuMob').click(
+                        function () {
+                             jQuery('.mobNavigation').css('display', 'block');
+                            setTimeout(() => {
+                                 jQuery('.mobNavigation').css('transform', 'translateY(0)');
+                            }, 100);
+                        }
+                    );
+                     jQuery('#closeMenu').click(
+                        function () {
+                             jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                            setTimeout(() => {
+                                 jQuery('.mobNavigation').css('display', 'none');
+                            }, 1000);
+                        }
+                    );
+                     jQuery('.menu').click(
+                        function () {
+                            setTimeout(() => {
+                                 jQuery('.mobNavigation').css('display', 'none');
+                            }, 1000);
+                             jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                        }
+                    );
+                }
+            });
+    
+    
+            //Portfol Mob
+            var h = 5;
+            jQuery(".PortfButt").click(function () {
+                var portfol =  jQuery(".portfol");
+                for (let a = h + 4; a >= h; a--) {
+                     jQuery(portfol[a]).css("display", "block");
+                }
+                h = h + 4;
+                if ( jQuery('.portfol:visible').length >= portfol.length) {
+                     jQuery(".PortfButt").css("display", "none");
+                }
+            });
+            //End Portfol Mob
+    
+    
+            //SmoothScroll
+            jQuery(function(){
+        jQuery('a[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+            && location.hostname == this.hostname) {
+                var jQuerytarget = jQuery(this.hash);
+                jQuerytarget = jQuerytarget.length && jQuerytarget || jQuery('[name=' + this.hash.slice(1) +']');
+                if (jQuerytarget.length) {
+                    var targetOffset = jQuerytarget.offset().top;
+                    jQuery('html,body').animate({scrollTop: targetOffset}, {
+              duration: 800, // продолжительность анимации
+              easing: "swing", // скорость анимации
+              });
+                    return false;
+                }
+            }
+        });
     });
-
-
-    //Slide Show
-
-    function CloseSlides() {
-      $(".SlideButt").addClass('SlideOff');
-      setTimeout(() => {
-        $(".SlideButt").removeClass('SlideButtOn');
-        $(".Slide").addClass("Unactive");
-      }, 900);
-    };
-    //END Slide Show
-
- 
-
-
-   //nav
-   $(document).ready(function () {
-            if (screen.width <= 700) {
-                $('header').css('display', 'none');
-                setTimeout(() => {
-                $('header').css('transform', 'translateY(-120vh)');
-                }, 100);
-                $('.menuMob').click(
-                    function () {
-                        $('header').css('display', 'block');
-                        setTimeout(() => {
-                        $('header').css('transform', 'translateY(0)');
-                        }, 100);
-                    }
-                );
-                $('#closeMenu').click(
-                    function () {
-                        $('header').css('transform', 'translateY(-120vh)');
-                        setTimeout(() => {
-                            $('header').css('display', 'none');
-                        }, 1000);
-                    }
-                );
-                $('.menu').click(
-                    function () {
-                        setTimeout(() => {
-                            $('header').css('display', 'none');
-                        }, 1000);
-                        $('header').css('transform', 'translateY(-120vh)');
-                    }
-                );
-            }
-        });
-        $(window).resize(function Nav() {
-            if (screen.width <= 700) {
-                $('header').css('display', 'none');
-                setTimeout(() => {
-                $('header').css('transform', 'translateY(-120vh)');
-                }, 100);
-                $('.menuMob').click(
-                    function () {
-                        $('header').css('display', 'block');
-                        setTimeout(() => {
-                        $('header').css('transform', 'translateY(0)');
-                        }, 100);
-                    }
-                );
-                $('#closeMenu').click(
-                    function () {
-                        $('header').css('transform', 'translateY(-120vh)');
-                        setTimeout(() => {
-                            $('header').css('display', 'none');
-                        }, 1000);
-                    }
-                );
-                $('.menu').click(
-                    function () {
-                        setTimeout(() => {
-                            $('header').css('display', 'none');
-                        }, 1000);
-                        $('header').css('transform', 'translateY(-120vh)');
-                    }
-                );
-            }
-            else {
-                $('header').css('transform', 'translateY(0)');
-            }
-        });
-    //END NAV
-    /////////////////////////
-
-
-
-  </script>
+        </script>
   <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
-  <!-- <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script> -->
+  <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
   <script src="js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
   <script src="js/scrollmagic/uncompressed/plugins/animation.velocity.js"></script>
   <script src="js/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="js/art.js"></script>
+  <script src="cursor.js"></script>
 </body>
 
 </html>

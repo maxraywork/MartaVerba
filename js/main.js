@@ -1,4 +1,4 @@
-$(document).ready(function () {
+jQuery(document).ready(function () {
 
     //Top triger
     var cntrTop = new ScrollMagic.Controller({
@@ -32,7 +32,7 @@ $(document).ready(function () {
         ])
 
     //MainText control
-    var StartText = new ScrollMagic.Scene({ triggerElement: "body", duration: '100%', offset: $(window).height() / 1.8 })
+    var StartText = new ScrollMagic.Scene({ triggerElement: "body", duration: '100%', offset:  jQuery(window).height() / 1.8 })
         .setTween(tweenStartText)
         .addIndicators({
             name: 'header',
@@ -60,8 +60,8 @@ $(document).ready(function () {
     /////////////////////////////////////////////////////////////////////////////////////////////////
 
     //Nav stick
-    var StickNav = new ScrollMagic.Scene({ triggerElement: "header" })
-        .setPin('nav')
+    var StickNav = new ScrollMagic.Scene({ triggerElement: ".pinNav" })
+        .setClassToggle('nav', 'sticky')
         .addIndicators({
             name: 'Nav',
             colorStart: '#f00',
@@ -70,8 +70,8 @@ $(document).ready(function () {
         .addTo(cntrTop);
 
     //Nav mobile stick
-    var StickNav = new ScrollMagic.Scene({ triggerElement: ".menuMob" })
-        .setPin('.menuMob')
+    var StickNav = new ScrollMagic.Scene({ triggerElement: ".pinNav" })
+        .setClassToggle('.menuMob', 'sticky')
         .addIndicators({
             name: 'Nav Mob',
             colorStart: '#fa0',
@@ -79,7 +79,7 @@ $(document).ready(function () {
         .addTo(cntrTop);
 
 
-    var NavPortf = new ScrollMagic.Scene({ triggerElement: ".PortfAll", duration: $("#PortfNav").height() })
+    var NavPortf = new ScrollMagic.Scene({ triggerElement: ".PortfAll", duration:  jQuery("#PortfNav").height() })
         .setClassToggle("#portfolio", "active")
         .addIndicators({
             name: 'Port Nav',
@@ -87,7 +87,7 @@ $(document).ready(function () {
             colorEnd: '#0ff'
         })
         .addTo(cntrSeven);
-    var NavArt = new ScrollMagic.Scene({ triggerElement: "#PaintNav", duration: $("#PaintNav").height()})
+    var NavArt = new ScrollMagic.Scene({ triggerElement: "#PaintNav", duration:  jQuery("#PaintNav").height()})
         .setClassToggle("#art", "active")
         .addIndicators({
             name: 'Art Nav',
@@ -95,7 +95,7 @@ $(document).ready(function () {
         })
         .addTo(cntrSeven);
 
-    var NavAbout = new ScrollMagic.Scene({ triggerElement: "#AboutFull", duration: $("#AboutFull").height() })
+    var NavAbout = new ScrollMagic.Scene({ triggerElement: "#AboutFull", duration:  jQuery("#AboutFull").height() })
         .setClassToggle("#about", "active")
         .addIndicators({
             name: 'About Nav',
@@ -103,7 +103,7 @@ $(document).ready(function () {
         })
         .addTo(cntrSeven);
 
-    var NavContact = new ScrollMagic.Scene({ triggerElement: ".footerAll" })
+    var NavContact = new ScrollMagic.Scene({ triggerElement: ".GetIT" })
         .setClassToggle("#contact", "active")
         .addIndicators({
             name: 'Contact Nav',
@@ -111,17 +111,17 @@ $(document).ready(function () {
         })
         .addTo(cntrSeven);
 
-    $('.portfol').each(function (i) {
+     jQuery('.portfol').each(function (i) {
 
         //Portf anim
-        let target1 = $(this).find("img");
+        let target1 =  jQuery(this).find("img");
         var portfol = new TimelineMax()
             .add([
                 TweenMax.to(target1, { transform: "translate(0, 0)" })
             ])
 
         //Portf cont
-        var Portf = new ScrollMagic.Scene({ triggerElement: this, triggerHook: 0.9,duration: $('.portfol').height() })
+        var Portf = new ScrollMagic.Scene({ triggerElement: this, triggerHook: 0.9,duration:  jQuery('.portfol').height() })
             .setTween(portfol)
             .addIndicators({
                 name: 'portfol',
@@ -142,7 +142,7 @@ var DarkTheme = new TimelineMax()
     ])
 
 //Dark cont
-var Dark = new ScrollMagic.Scene({ triggerElement: '.PortfAll', duration: '30%', offset: $('.PortfAll').height() / 2.5 })
+var Dark = new ScrollMagic.Scene({ triggerElement: '.PortfAll', duration: '30%', offset:  jQuery('.PortfAll').height() / 2.5 })
     .setTween(DarkTheme)
     .addIndicators({
         name: 'BG COlor',
@@ -164,7 +164,7 @@ var LightTheme = new TimelineMax()
     ])
 
 //Light cont
-var Light = new ScrollMagic.Scene({ triggerElement: '#AboutFull', duration: '10%', offset: $('#AboutFull').height() / 1.5 })
+var Light = new ScrollMagic.Scene({ triggerElement: '#AboutFull', duration: '10%', offset:  jQuery('#AboutFull').height() / 1.5 })
     .setTween(LightTheme)
     .addIndicators({
         name: 'BG COlor light',
@@ -173,7 +173,7 @@ var Light = new ScrollMagic.Scene({ triggerElement: '#AboutFull', duration: '10%
     })
     .addTo(cntr);
 //Paint anim
-var Paintlogo = new ScrollMagic.Scene({ triggerElement: ".AnimPaint", duration: $(".AnimPaint").height() * 2.5 })
+var Paintlogo = new ScrollMagic.Scene({ triggerElement: ".AnimPaint", duration:  jQuery(".AnimPaint").height() * 2.5 })
     .setTween(TweenMax.to(".PaintLogo", { transform: "translate(0, 0)" }))
     .addIndicators({
         name: 'Art logo',
@@ -188,7 +188,7 @@ var Artanim = new TimelineMax()
         TweenMax.to(".PaintBg", { width: "0" }),
     ])
 //Art control
-var PaintImg = new ScrollMagic.Scene({ triggerElement: ".PaintAnimImg", duration: $(".PaintAnimImg").height() })
+var PaintImg = new ScrollMagic.Scene({ triggerElement: ".PaintAnimImg", duration:  jQuery(".PaintAnimImg").height() })
     .setTween(Artanim)
     .addIndicators({
         name: 'Art img',
@@ -197,14 +197,14 @@ var PaintImg = new ScrollMagic.Scene({ triggerElement: ".PaintAnimImg", duration
     })
     .addTo(cntrDown);
 
-var PaintBall = new ScrollMagic.Scene({ triggerElement: ".Paint", duration: $(".PaintAnimImg").height() / 1.4 })
+var PaintBall = new ScrollMagic.Scene({ triggerElement: ".Paint", duration:  jQuery(".PaintAnimImg").height() / 1.4 })
     .setTween(TweenMax.to(".scrollBallMore", { transform: "translate(0, 0)" }))
     .addIndicators({
         name: 'Ball more',
         colorStart: '#f00',
         colorEnd: '#f00'
     })
-    .addTo(cntrSeven);
+    .addTo(cntrDown);
 
 //about anim
 var AboutanimBall = new TimelineMax()
@@ -212,7 +212,7 @@ var AboutanimBall = new TimelineMax()
         TweenMax.to(".ball", { transform: 'translate(0, 0)' }),
     ])
 //About control
-var AboutBall = new ScrollMagic.Scene({ triggerElement: ".textBall", triggerHook: 0.8, duration: $("#AboutFull").height() })
+var AboutBall = new ScrollMagic.Scene({ triggerElement: ".textBall", triggerHook: 0.8, duration:  jQuery("#AboutFull").height() })
     .setTween(AboutanimBall)
     .addIndicators({
         name: 'Ball',
@@ -227,7 +227,7 @@ var Footer = new TimelineMax()
         TweenMax.to('.behance', { transform: 'translate(0, 0)' }),
     ])
 //Contact control
-var AAooterAnim = new ScrollMagic.Scene({ triggerElement: ".allHref", duration: $(".allHref").height() * 2, offset: 20 })
+var AAooterAnim = new ScrollMagic.Scene({ triggerElement: ".allHref", duration:  jQuery(".allHref").height() * 2, offset: 20 })
     .setTween(Footer)
     .addIndicators({
         name: 'Href',
@@ -241,7 +241,7 @@ var Footer2 = new TimelineMax()
         TweenMax.to('.drib', { transform: 'translate(0, 0)' }),
     ])
 //Contact control
-var AAooterAnim2 = new ScrollMagic.Scene({ triggerElement: ".allHref", duration: $(".allHref").height() * 1.6, offset: 60 })
+var AAooterAnim2 = new ScrollMagic.Scene({ triggerElement: ".allHref", duration:  jQuery(".allHref").height() * 1.6, offset: 60 })
     .setTween(Footer2)
     .addIndicators({
         name: 'Href',
@@ -255,7 +255,7 @@ var Footer3 = new TimelineMax()
         TweenMax.to('.insta', { transform: 'translate(0, 0)' }),
     ])
 //Contact control
-var AAooterAnim3 = new ScrollMagic.Scene({ triggerElement: ".allHref", duration: $(".allHref").height() * 1.6, offset: 100 })
+var AAooterAnim3 = new ScrollMagic.Scene({ triggerElement: ".allHref", duration:  jQuery(".allHref").height() * 1.6, offset: 100 })
     .setTween(Footer3)
     .addIndicators({
         name: 'Href',
@@ -263,14 +263,6 @@ var AAooterAnim3 = new ScrollMagic.Scene({ triggerElement: ".allHref", duration:
         colorEnd: '#000'
     })
     .addTo(cntrDown);
-//Active Menu
-var NavPortf = new ScrollMagic.Scene({ triggerElement: "#PortfAll", duration: $("#PortfAll").height() })
-    .setClassToggle("#portfolio", "active")
-    .addIndicators({
-        name: 'Portf Nav',
-        colorStart: '#000'
-    })
-    .addTo(cntrSeven);
 
 });
 
