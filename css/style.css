@@ -248,7 +248,6 @@ a {
 }
 
 .video {
-  float: right;
   position: absolute;
   right: 100px;
   z-index: -1;
@@ -269,6 +268,12 @@ a {
 
 .mainName h1 {
   white-space: nowrap;
+}
+
+@media screen and (max-height: 800px) and (max-width: 1200px) and (min-width: 700px) {
+  .mainName {
+    padding: 30vh 0 20px 0;
+  }
 }
 
 .mainDes {
