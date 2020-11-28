@@ -437,9 +437,9 @@
                 //End Portfol Mob
                 
         //SmoothScroll
-        $(document).ready(function () {
+        jQuery(document).ready(function () {
             // Добавить плавную прокрутку до всех ссылок
-            $("a").on('click', function (event) {
+            jQuery("a").on('click', function (event) {
 
                 // Убедись в этом что .hash имеет значение перед переопределением поведения по умолчанию
                 if (this.hash !== "") {
@@ -451,15 +451,16 @@
 
                     // Использование метода animate() jQuery для добавления плавной прокрутки страницы
                     // Необязательное число (800) указывает количество миллисекунд, необходимых для прокрутки до указанной области
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 1000, "easeInOutCubic", function () {
+                    jQuery('html, body').animate({
+                        scrollTop: jQuery(hash).offset().top
+                    }, 1000, "swing", function () {
 
                         // Добавить хэш (#) для URL-адреса после завершения прокрутки (поведение щелчка по умолчанию)
                         window.location.hash = hash;
                     });
                 } // Конец, если
-                }); });
+                }); 
+                });
         
                 
             </script>
