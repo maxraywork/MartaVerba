@@ -435,26 +435,33 @@
                     }
                 });
                 //End Portfol Mob
+                
+        //SmoothScroll
+        $(document).ready(function () {
+            // Добавить плавную прокрутку до всех ссылок
+            $("a").on('click', function (event) {
+
+                // Убедись в этом что .hash имеет значение перед переопределением поведения по умолчанию
+                if (this.hash !== "") {
+                    // Запретить поведение щелчка якоря по умолчанию
+                    event.preventDefault();
+
+                    // Хранить хэш
+                    var hash = this.hash;
+
+                    // Использование метода animate() jQuery для добавления плавной прокрутки страницы
+                    // Необязательное число (800) указывает количество миллисекунд, необходимых для прокрутки до указанной области
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, "easeInOutCubic", function () {
+
+                        // Добавить хэш (#) для URL-адреса после завершения прокрутки (поведение щелчка по умолчанию)
+                        window.location.hash = hash;
+                    });
+                } // Конец, если
+                }); });
         
-        
-                //SmoothScroll
-                jQuery(function(){
-            jQuery('a[href*=#]').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-                && location.hostname == this.hostname) {
-                    var jQuerytarget = jQuery(this.hash);
-                    jQuerytarget = jQuerytarget.length && jQuerytarget || jQuery('[name=' + this.hash.slice(1) +']');
-                    if (jQuerytarget.length) {
-                        var targetOffset = jQuerytarget.offset().top;
-                        jQuery('html,body').animate({scrollTop: targetOffset}, {
-                  duration: 800, // продолжительность анимации
-                  easing: "swing", // скорость анимации
-                  });
-                        return false;
-                    }
-                }
-            });
-        });
+                
             </script>
     <script src="js/main.js"></script>
     <script src="cursor.js"></script>
