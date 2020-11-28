@@ -258,7 +258,6 @@ a {
 }
 
 .video {
-    float: right;
     position: absolute;
     right: 100px;
     z-index: -1;
@@ -278,6 +277,11 @@ a {
 
     h1 {
         white-space: nowrap;
+    }
+}
+@media screen and (max-height: 800px) and (max-width: 1200px) and (min-width: 700px){
+    .mainName {
+        padding: 30vh 0 20px 0;
     }
 }
 
@@ -484,7 +488,7 @@ nav {
 .PortfCenter {
     text-align: center;
     margin: 0 auto;
-    width: 1404px;
+    width: 1372px;
     margin-top: 152px;
     padding-bottom: 472px;
 
@@ -493,16 +497,13 @@ nav {
         flex-wrap: wrap;
 
         .portfol {
-            margin-right: 216px;
+            margin-right: 248px;
             margin-top: 156px;
 
             .ImgPortf {
                 position: relative;
-            }
-
-            img {
-                width: 324px;
-                height: 567px;
+                width: 292px;
+                height: 511px;
             }
 
             .textPortf {
@@ -526,7 +527,7 @@ nav {
             .portfol:nth-child(3n+2) {
                 transform: translate(0, 230px);
 
-                img {
+                .ImgPortf {
                     transform: translate(0, -230px);
                 }
             }
@@ -535,13 +536,13 @@ nav {
                 margin-right: 0;
                 transform: translate(0, 90px);
 
-                img {
+                .ImgPortf {
                     transform: translate(0, -90px);
                 }
             }
 
             .portfol:nth-child(3n+1) {
-                img {
+                .ImgPortf {
                     transform: translate(0, 0);
                 }
             }
@@ -693,11 +694,11 @@ $BallM: 413px;
 }
 
 .GetIT {
-    font-size: 150px;
+    font-size: 7.3vw;
     font-family: $Mont;
     text-transform: uppercase;
-    margin: 0 0 363px 0;
-    padding-top: 363px;
+    margin: 0 0 10vh 0;
+    padding-top: 20vh;
 }
 
 //footer
@@ -794,11 +795,11 @@ $BallM: 413px;
     }
 
     .PortfCenter {
-        width: 1240px;
+        width: 1128px;
 
         .PortfAll {
             .portfol {
-                margin-right: 20px;
+                margin-right: 126px;
             }
 
             .portfol:nth-child(3n+3) {
@@ -897,7 +898,7 @@ $BallM: 413px;
                 margin-right: 2.2vw;
                 margin-top: 138px;
 
-                img {
+                .ImgPortf {
                     width: 46.5vw;
                     height: auto;
                 }
@@ -911,7 +912,7 @@ $BallM: 413px;
                 margin-right: 0;
                 transform: translate(0, 205px);
 
-                img {
+                .ImgPortf {
                     transform: translate(0, -205px);
                 }
             }
@@ -963,9 +964,6 @@ $BallM: 413px;
         right: 217px - 20px;
     }
 
-    .GetIT {
-        display: none;
-    }
 
     .footerAll {
         padding-top: 16vh;
@@ -1139,7 +1137,7 @@ $BallM: 413px;
                 margin-top: 22px;
                 display: none;
 
-                img {
+                .ImgPortf {
                     width: 95.2vw;
                     height: auto;
                     transform: translate(0, -40px);
@@ -1212,7 +1210,8 @@ $BallM: 413px;
     }
 
     .GetIT {
-        display: none;
+        padding-top: 400px;
+        margin-bottom: 0;
     }
 
     .ball {
@@ -1220,7 +1219,6 @@ $BallM: 413px;
     }
 
     .footer {
-        padding-top: 20vh;
         font-size: 6.5vw;
         display: block;
 

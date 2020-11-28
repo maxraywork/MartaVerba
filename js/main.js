@@ -114,7 +114,7 @@ jQuery(document).ready(function () {
      jQuery('.portfol').each(function (i) {
 
         //Portf anim
-        let target1 =  jQuery(this).find("img");
+        let target1 =  jQuery(this).find(".ImgPortf");
         var portfol = new TimelineMax()
             .add([
                 TweenMax.to(target1, { transform: "translate(0, 0)" })

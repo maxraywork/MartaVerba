@@ -248,7 +248,6 @@ a {
 }
 
 .video {
-  float: right;
   position: absolute;
   right: 100px;
   z-index: -1;
@@ -269,6 +268,12 @@ a {
 
 .mainName h1 {
   white-space: nowrap;
+}
+
+@media screen and (max-height: 800px) and (max-width: 1200px) and (min-width: 700px) {
+  .mainName {
+    padding: 30vh 0 20px 0;
+  }
 }
 
 .mainDes {
@@ -494,7 +499,7 @@ nav ul li:last-child {
 .PortfCenter {
   text-align: center;
   margin: 0 auto;
-  width: 1404px;
+  width: 1372px;
   margin-top: 152px;
   padding-bottom: 472px;
 }
@@ -508,17 +513,14 @@ nav ul li:last-child {
 }
 
 .PortfCenter .PortfAll .portfol {
-  margin-right: 216px;
+  margin-right: 248px;
   margin-top: 156px;
 }
 
 .PortfCenter .PortfAll .portfol .ImgPortf {
   position: relative;
-}
-
-.PortfCenter .PortfAll .portfol img {
-  width: 324px;
-  height: 567px;
+  width: 292px;
+  height: 511px;
 }
 
 .PortfCenter .PortfAll .portfol .textPortf {
@@ -537,7 +539,7 @@ nav ul li:last-child {
     -webkit-transform: translate(0, 230px);
             transform: translate(0, 230px);
   }
-  .PortfCenter .PortfAll .portfol:nth-child(3n+2) img {
+  .PortfCenter .PortfAll .portfol:nth-child(3n+2) .ImgPortf {
     -webkit-transform: translate(0, -230px);
             transform: translate(0, -230px);
   }
@@ -546,11 +548,11 @@ nav ul li:last-child {
     -webkit-transform: translate(0, 90px);
             transform: translate(0, 90px);
   }
-  .PortfCenter .PortfAll .portfol:nth-child(3n+3) img {
+  .PortfCenter .PortfAll .portfol:nth-child(3n+3) .ImgPortf {
     -webkit-transform: translate(0, -90px);
             transform: translate(0, -90px);
   }
-  .PortfCenter .PortfAll .portfol:nth-child(3n+1) img {
+  .PortfCenter .PortfAll .portfol:nth-child(3n+1) .ImgPortf {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -715,11 +717,11 @@ nav ul li:last-child {
 }
 
 .GetIT {
-  font-size: 150px;
+  font-size: 7.3vw;
   font-family: Montblanc-Regular;
   text-transform: uppercase;
-  margin: 0 0 363px 0;
-  padding-top: 363px;
+  margin: 0 0 10vh 0;
+  padding-top: 20vh;
 }
 
 .footerAll {
@@ -814,10 +816,10 @@ nav ul li:last-child {
     font-size: 9vw;
   }
   .PortfCenter {
-    width: 1240px;
+    width: 1128px;
   }
   .PortfCenter .PortfAll .portfol {
-    margin-right: 20px;
+    margin-right: 126px;
   }
   .PortfCenter .PortfAll .portfol:nth-child(3n+3) {
     margin-right: 0;
@@ -895,7 +897,7 @@ nav ul li:last-child {
     margin-right: 2.2vw;
     margin-top: 138px;
   }
-  .PortfCenter .PortfAll .portfol img {
+  .PortfCenter .PortfAll .portfol .ImgPortf {
     width: 46.5vw;
     height: auto;
   }
@@ -907,7 +909,7 @@ nav ul li:last-child {
     -webkit-transform: translate(0, 205px);
             transform: translate(0, 205px);
   }
-  .PortfCenter .PortfAll .portfol:nth-child(2n) img {
+  .PortfCenter .PortfAll .portfol:nth-child(2n) .ImgPortf {
     -webkit-transform: translate(0, -205px);
             transform: translate(0, -205px);
   }
@@ -944,9 +946,6 @@ nav ul li:last-child {
   }
   .MorePrj {
     right: 197px;
-  }
-  .GetIT {
-    display: none;
   }
   .footerAll {
     padding-top: 16vh;
@@ -1095,7 +1094,7 @@ nav ul li:last-child {
     margin-top: 22px;
     display: none;
   }
-  .PortfCenter .PortfAll .portfol img {
+  .PortfCenter .PortfAll .portfol .ImgPortf {
     width: 95.2vw;
     height: auto;
     -webkit-transform: translate(0, -40px);
@@ -1152,13 +1151,13 @@ nav ul li:last-child {
     right: 17px;
   }
   .GetIT {
-    display: none;
+    padding-top: 400px;
+    margin-bottom: 0;
   }
   .ball {
     bottom: -240px;
   }
   .footer {
-    padding-top: 20vh;
     font-size: 6.5vw;
     display: block;
   }
