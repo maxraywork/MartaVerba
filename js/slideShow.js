@@ -2,7 +2,6 @@
 
 
 var slidesOn = document.getElementsByClassName("Slide");
-showSlides(slideIndex);
 
 // var cA = c.getAttribute();
 
@@ -38,7 +37,7 @@ function currentSlide(n) {
 // Next/previous controls
 function plusSlides() {
   Stop();
-  var slides = document.getElementsByClassName("imgArt");
+  var slides = document.getElementsByClassName("Slide");
   if (slideIndex >= slides.length - 1) {
     slideLast = slides.length - 1;
     jQuery(slidesOn[slideLast]).addClass("BackAnim");
@@ -82,7 +81,7 @@ function plusSlides() {
 
 function minusSlides() {
   Stop();
-  var slides = document.getElementsByClassName("imgArt");
+  var slides = document.getElementsByClassName("Slides");
   if (slideIndex <= 0) {
     var a = slides.length - 1;
   jQuery(slidesOn[slideIndex]).addClass("NextAnimRev");
@@ -123,8 +122,7 @@ else {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("imgArt");
+  var slides = document.getElementsByClassName("Slide");
   if (n >= slides.length) { slideIndex = 0 };
   if (n < 0) { slideIndex = slides.length - 1 };
 }

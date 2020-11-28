@@ -347,9 +347,7 @@ nav {
   margin: 0 auto;
   padding-top: 45px;
   z-index: 999999;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 48px;
   position: absolute;
   bottom: 2vh;
   right: 100px;
@@ -576,11 +574,13 @@ nav ul li:last-child {
   position: relative;
 }
 
-.Paint img {
+.Paint .PaintAnimImg {
   width: 72.8vw;
   height: 560px;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
+  position: relative;
 }
 
 .scrollBallMore {
@@ -623,11 +623,6 @@ nav ul li:last-child {
 
 .scrollBallMore:hover {
   color: #1a1c25;
-}
-
-.PaintAnimImg {
-  overflow: hidden;
-  position: relative;
 }
 
 .PaintBg {
@@ -816,11 +811,7 @@ nav ul li:last-child {
     font-size: 9vw;
   }
   .PortfCenter {
-<<<<<<< HEAD
     width: 1128px;
-=======
-    width: 1012px;
->>>>>>> c3e3904c75f84254497b5914756c4c73e343006f
   }
   .PortfCenter .PortfAll .portfol {
     margin-right: 126px;
@@ -834,7 +825,7 @@ nav ul li:last-child {
   .Paint {
     margin-left: 4vw;
   }
-  .Paint img {
+  .Paint .PaintAnimImg {
     width: 63.7vw;
     max-width: 917px;
     height: 560px;
@@ -854,7 +845,7 @@ nav ul li:last-child {
   }
 }
 
-@media screen and (max-width: 1300px) and (min-width: 701px) {
+@media screen and (max-width: 1300px) and (min-width: 750px) {
   body {
     padding: 2.5vw;
   }
@@ -884,6 +875,7 @@ nav ul li:last-child {
   }
   nav {
     font-size: 36px;
+    height: 78px;
     padding-top: 42px;
     right: 25px;
   }
@@ -894,16 +886,16 @@ nav ul li:last-child {
     padding: 0 15px 0 0;
   }
   .PortfCenter {
-    width: 95.5vw;
+    width: 731px;
     margin-top: 146px;
   }
   .PortfCenter .PortfAll .portfol {
-    margin-right: 2.2vw;
+    margin-right: 17px;
     margin-top: 138px;
   }
   .PortfCenter .PortfAll .portfol .ImgPortf {
-    width: 46.5vw;
-    height: auto;
+    width: 357px;
+    height: 625px;
   }
   .PortfCenter .PortfAll .portfol .textPortf {
     padding: 26px 0;
@@ -970,7 +962,7 @@ nav ul li:last-child {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   body {
     padding: 2.4vw 9px;
   }
@@ -1048,6 +1040,7 @@ nav ul li:last-child {
     position: absolute;
     right: 20px;
     bottom: 20px;
+    height: 60px;
     z-index: 9999;
     display: block;
     padding-top: 59px;
@@ -1089,7 +1082,7 @@ nav ul li:last-child {
     font-size: 36px;
   }
   .PortfCenter {
-    width: 95.2vw;
+    width: 357px;
     margin-top: 152px;
     padding-bottom: 172px;
   }
@@ -1099,8 +1092,8 @@ nav ul li:last-child {
     display: none;
   }
   .PortfCenter .PortfAll .portfol .ImgPortf {
-    width: 95.2vw;
-    height: auto;
+    width: 357px;
+    height: 625px;
     -webkit-transform: translate(0, -40px);
             transform: translate(0, -40px);
   }
@@ -1121,7 +1114,10 @@ nav ul li:last-child {
   .PaintLogo {
     font-size: 36px;
   }
-  .Paint img {
+  .Paint {
+    margin-left: -2.4vw;
+  }
+  .Paint .PaintAnimImg {
     width: 100vw;
     height: 314px;
   }
@@ -1135,9 +1131,6 @@ nav ul li:last-child {
   .SBBGMore {
     width: 188px;
     height: 188px;
-  }
-  .PaintAnimImg {
-    margin: 0 -9px;
   }
   .PaintBg {
     width: 100vw;

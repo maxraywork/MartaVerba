@@ -35,13 +35,12 @@
   position: relative;
 }
 
-.ArtCenter .ArtAll .art div:first-child {
-  position: relative;
-}
-
 .ArtCenter .ArtAll .art .ImgDivArt {
-  position: absolute;
-  top: -10%;
+  top: -20%;
+  width: 610px;
+  height: 400px;
+  z-index: 1;
+  position: relative;
 }
 
 .ArtCenter .ArtAll .art .BGArt {
@@ -53,14 +52,6 @@
   z-index: 2;
   -webkit-animation: blackk 1.5s ease-in-out;
           animation: blackk 1.5s ease-in-out;
-}
-
-.ArtCenter .ArtAll .art img {
-  width: 610px;
-  height: 400px;
-  z-index: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .ArtCenter .ArtAll .art .textArt {
@@ -453,12 +444,15 @@
 }
 
 @media screen and (max-width: 1500px) and (min-width: 1380px) {
+  .ArtCenter {
+    width: 1240px;
+  }
   .ArtCenter .ArtAll .art {
     margin-right: 20px;
   }
 }
 
-@media screen and (max-width: 1379px) and (min-width: 700px) {
+@media screen and (max-width: 1379px) and (min-width: 750px) {
   nav {
     font-size: 36px;
   }
@@ -469,16 +463,16 @@
     padding: 0 15px 0 0;
   }
   .ArtCenter {
-    width: 79.4vw;
+    width: 610px;
     padding-bottom: 0;
   }
   .ArtCenter .ArtAll .art {
     margin-right: 0;
     margin-top: 64px;
   }
-  .ArtCenter .ArtAll .art img {
-    width: 79.4vw;
-    height: auto;
+  .ArtCenter .ArtAll .art .ImgDivArt {
+    width: 610px;
+    height: 400px;
   }
   .next {
     right: 0;
@@ -495,18 +489,18 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .navArt {
     top: 0;
     right: 0;
-    height: auto;
+    height: 100vh;
     z-index: 999999;
   }
   nav {
     padding-top: 45px;
   }
   .ArtCenter {
-    width: 93.1vw;
+    width: 349px;
     padding-top: 20vh;
     padding-bottom: 0;
   }
@@ -514,9 +508,9 @@
     margin-top: 48px;
     margin-right: 0;
   }
-  .ArtCenter .ArtAll .art img {
-    width: 93.1vw;
-    height: auto;
+  .ArtCenter .ArtAll .art .ImgDivArt {
+    width: 349px;
+    height: 304px;
   }
   .ArtCenter .ArtAll .art .textArt {
     padding: 22px 0;
@@ -532,7 +526,7 @@
     top: auto;
   }
   .prev {
-    left: 10vw;
+    left: 20vw;
   }
   .next {
     right: 10vw;

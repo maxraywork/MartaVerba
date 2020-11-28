@@ -9,6 +9,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/styleArt.css" />
+  <link rel="stylesheet" href="css/tilteffect.css">
   <!-- Scripts -->
   <script src="js/slideShow.js"></script>
   <script src="libs/jquery/3.3.1/jquery.min.js"></script>
@@ -74,8 +75,8 @@
     </header>
   <main id="top">
       <div class="cursor-point"></div>
-      <div>
-        <svg class="menuMob navMobArt" id="menuMob" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+      <div class="menuMob navMobArt" id="menuMob">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
         <g fill="none" fill-rule="evenodd">
             <g>
                 <g transform="translate(-295 -59) translate(295 59)">
@@ -89,7 +90,18 @@
       <div class="ArtAll">
         <div class="art">
           <div class="ImgDivArt">
-            <a href="##"><img src="img/Art/Slide/1.1.jpg" alt="art" class="imgArt" />
+            <a href="##"><img src="img/Art/Slide/1.1.jpg" alt="art" class="imgArt tilt-effect" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' />
+            </a>
+                <div class="BGArt"></div>
+          </div>
+          <div class="textArt">
+            <div>canvas, acrylic paint - 50x100 cm</div>
+            <div>Waiting</div>
+          </div>
+        </div>
+        <div class="art">
+          <div class="ImgDivArt">
+            <a href="##"><img src="img/Art/Slide/2.2.jpg" alt="art" class="imgArt tilt-effect" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' />
               <div class="BGArt"></div>
             </a>
           </div>
@@ -100,7 +112,7 @@
         </div>
         <div class="art">
           <div class="ImgDivArt">
-            <a href="##"><img src="img/Art/Slide/2.2.jpg" alt="art" class="imgArt" />
+            <a href="##"><img src="img/Art/Slide/3.3.jpg" alt="art" class="imgArt tilt-effect" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' />
               <div class="BGArt"></div>
             </a>
           </div>
@@ -111,7 +123,7 @@
         </div>
         <div class="art">
           <div class="ImgDivArt">
-            <a href="##"><img src="img/Art/Slide/3.3.jpg" alt="art" class="imgArt" />
+            <a href="##"><img src="img/Art/Slide/4.4.jpg" alt="art" class="imgArt tilt-effect" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' />
               <div class="BGArt"></div>
             </a>
           </div>
@@ -122,7 +134,7 @@
         </div>
         <div class="art">
           <div class="ImgDivArt">
-            <a href="##"><img src="img/Art/Slide/4.4.jpg" alt="art" class="imgArt" />
+            <a href="##"><img src="img/Art/Slide/5.5.jpg" alt="art" class="imgArt tilt-effect" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' />
               <div class="BGArt"></div>
             </a>
           </div>
@@ -133,18 +145,7 @@
         </div>
         <div class="art">
           <div class="ImgDivArt">
-            <a href="##"><img src="img/Art/Slide/5.5.jpg" alt="art" class="imgArt" />
-              <div class="BGArt"></div>
-            </a>
-          </div>
-          <div class="textArt">
-            <div>canvas, acrylic paint - 50x100 cm</div>
-            <div>Waiting</div>
-          </div>
-        </div>
-        <div class="art">
-          <div class="ImgDivArt">
-            <a href="##"><img src="img/Art/Slide/5.5.jpg" alt="art" class="imgArt" />
+            <a href="##"><img src="img/Art/Slide/5.5.jpg" alt="art" class="imgArt tilt-effect" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' />
               <div class="BGArt"></div>
             </a>
           </div>
@@ -291,7 +292,7 @@
             "<img src='" + slides[i].getAttribute("src") + "' alt='slide' class='Slide Unactive'>");
         }
         var a = 0;
-        jQuery(".imgArt").each(function () {
+        jQuery(".ImgDivArt a").each(function () {
           a++;
           jQuery(this).attr("onclick", "currentSlide(" + (a - 1) + ")");
         });
@@ -300,7 +301,7 @@
     
             jQuery(document).ready(function () {
                 jQuery('.pinNav').css("height", jQuery("nav").height() + 45 );
-                if (screen.width <= 700) { jQuery('.pinNav').css("height", jQuery(".menuMob").height() + 59 ) };
+                if (screen.width <= 750) { jQuery('.pinNav').css("height", jQuery(".menuMob").height() + 59 ) };
             });
     
             //cursor
@@ -332,7 +333,7 @@
     
             //nav
             jQuery(document).ready(function () {
-                if (screen.width <= 700) {
+                if (screen.width <= 750) {
                      jQuery('.mobNavigation').css('display', 'none');
                     setTimeout(() => {
                          jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
@@ -364,7 +365,7 @@
                 }
             });
             jQuery(window).resize(function Nav() {
-                if (screen.width <= 700) {
+                if (screen.width <= 750) {
                      jQuery('.mobNavigation').css('display', 'none');
                     setTimeout(() => {
                          jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
@@ -412,7 +413,30 @@
             //End Portfol Mob
     
     
+           //SmoothScroll
+        $(document).ready(function () {
+            // Добавить плавную прокрутку до всех ссылок
+            $("a").on('click', function (event) {
 
+                // Убедись в этом что .hash имеет значение перед переопределением поведения по умолчанию
+                if (this.hash !== "") {
+                    // Запретить поведение щелчка якоря по умолчанию
+                    event.preventDefault();
+
+                    // Хранить хэш
+                    var hash = this.hash;
+
+                    // Использование метода animate() jQuery для добавления плавной прокрутки страницы
+                    // Необязательное число (800) указывает количество миллисекунд, необходимых для прокрутки до указанной области
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, "easeInOutCubic", function () {
+
+                        // Добавить хэш (#) для URL-адреса после завершения прокрутки (поведение щелчка по умолчанию)
+                        window.location.hash = hash;
+                    });
+                } // Конец, если
+                }); });
         </script>
   <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
   <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
@@ -422,6 +446,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="js/art.js"></script>
   <script src="cursor.js"></script>
+  <script src="js/tiltfx.js"></script>
 </body>
 
 </html>

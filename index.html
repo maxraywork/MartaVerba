@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/tilteffect.css">
     <!-- Scripts -->
     <script src="libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
     <script defer src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script defer src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
@@ -193,7 +194,7 @@
             </div>
             <div class="Paint">
                 <div class="PaintAnimImg">
-                    <img src="img/Paint/gallery-photo.jpg" alt="gallary">
+                    <a href="art.html"><img src="img/Paint/gallery-photo.jpg" class="tilt-effect" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' alt="gallary"></a>
                     <div class="PaintBg"></div>
                 </div>
                 <a href="art.html">
@@ -326,8 +327,8 @@
         
         
                 jQuery(document).ready(function () {
-                    jQuery('.pinNav').css("height", jQuery("nav").height() + 45 );
-                    if (screen.width <= 700) { jQuery('.pinNav').css("height", jQuery(".menuMob").height() + 59 ) };
+                    if (screen.width > 750) {jQuery('.pinNav').css("height", jQuery("nav").height() + 45 );};
+                    if (screen.width <= 750) { jQuery('.pinNav').css("height", jQuery(".menuMob").height() + 59) };
                 });
         
                 //cursor
@@ -359,7 +360,7 @@
         
                 //nav
                 jQuery(document).ready(function () {
-                    if (screen.width <= 700) {
+                    if (screen.width <= 750) {
                          jQuery('.mobNavigation').css('display', 'none');
                         setTimeout(() => {
                              jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
@@ -391,8 +392,8 @@
                     }
                 });
                 jQuery(window).resize(function Nav() {
-                    if (screen.width <= 700) {
-                         jQuery('.mobNavigation').css('display', 'none');
+                    if (screen.width <= 750) {
+                        jQuery('.mobNavigation').css('display', 'none');
                         setTimeout(() => {
                              jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
                         }, 100);
