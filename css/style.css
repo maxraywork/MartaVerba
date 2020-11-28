@@ -816,7 +816,11 @@ nav ul li:last-child {
     font-size: 9vw;
   }
   .PortfCenter {
+<<<<<<< HEAD
     width: 1128px;
+=======
+    width: 1012px;
+>>>>>>> c3e3904c75f84254497b5914756c4c73e343006f
   }
   .PortfCenter .PortfAll .portfol {
     margin-right: 126px;
