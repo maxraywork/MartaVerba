@@ -84,6 +84,7 @@ function minusSlides() {
   var slides = document.getElementsByClassName("Slides");
   if (slideIndex <= 0) {
     var a = slides.length - 1;
+    console.log(a+" первое");
   jQuery(slidesOn[slideIndex]).addClass("NextAnimRev");
   jQuery(slidesOn[a]).removeClass("Unactive");
   jQuery(slidesOn[a]).addClass("BackAnimRev");
@@ -97,6 +98,7 @@ function minusSlides() {
   setTimeout(() => {
     showSlides(slideIndex = a);
   }, 900);
+     console.log(a+" второе")
   setTimeout(() => {
     Start();
   }, 900);
@@ -125,7 +127,6 @@ function showSlides(n) {
   var slides = document.getElementsByClassName("Slide");
   if (n >= slides.length) { slideIndex = 0 };
   if (n <= 0) { slideIndex = slides.length - 1 };
-  console.log(slideIndex);
 }
 
 
