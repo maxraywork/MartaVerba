@@ -125,6 +125,7 @@ function showSlides(n) {
   var slides = document.getElementsByClassName("Slide");
   if (n >= slides.length) { slideIndex = 0 };
   if (n < 0) { slideIndex = slides.length - 1 };
+  console.log(slideIndex);
 }
 
 
