@@ -98,7 +98,7 @@ function minusSlides() {
   setTimeout(() => {
     showSlides(slideIndex = a);
   }, 900);
-     console.log(a+" второе")
+     console.log(a+" второе");
   setTimeout(() => {
     Start();
   }, 900);
