@@ -9,7 +9,7 @@ let Start = gsap.timeline({
     scrollTrigger: {
         trigger: ".mainDes",
         start: "bottom 70%",
-        markers: false,
+        markers: true,
     }
 });
 
@@ -23,7 +23,7 @@ ScrollTrigger.create({
     start: "top top",
     endTrigger: 'html',
     toggleClass: 'sticky',
-    markers: false,
+    markers: true,
     scrub: false
 });
 ScrollTrigger.create({
@@ -31,7 +31,7 @@ ScrollTrigger.create({
     start: "top top",
     endTrigger: 'html',
     toggleClass: {targets: ".menuMob", className: "sticky"},
-    markers: false,
+    markers: true,
     scrub: false
 });
 
@@ -41,7 +41,7 @@ ScrollTrigger.create({
     start: "top 70%",
     end: "bottom 70%",
     toggleClass: {targets: "#portfolio", className: "active"},
-    markers: false,
+    markers: true,
     scrub: false
 });
 ScrollTrigger.create({
@@ -49,7 +49,7 @@ ScrollTrigger.create({
     start: "top 70%",
     end: "bottom 70%",
     toggleClass: {targets: "#art", className: "active"},
-    markers: false,
+    markers: true,
     scrub: false
 });
 ScrollTrigger.create({
@@ -57,7 +57,7 @@ ScrollTrigger.create({
     start: "top 70%",
     end: "bottom 70%",
     toggleClass: {targets: "#about", className: "active"},
-    markers: false,
+    markers: true,
     scrub: false
 });
 ScrollTrigger.create({
@@ -65,7 +65,7 @@ ScrollTrigger.create({
     start: "top 70%",
     endTrigger: 'html',
     toggleClass: {targets: "#contact", className: "active"},
-    markers: false,
+    markers: true,
     scrub: false
 });
 
@@ -93,7 +93,7 @@ let Dark = gsap.timeline({
         trigger: ".PortfAll",
         start: "40% bottom",
         end: "+=40%",
-        markers: false,
+        markers: true,
     }
 });
 
