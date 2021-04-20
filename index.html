@@ -7,79 +7,76 @@
     <title>Marta Verba</title>
     <link rel="shortcut icon" href="img/icon/logo.png" type="image/png">
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="hover.css">
     <link rel="stylesheet" href="css/tilteffect.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Scripts -->
     <script src="libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-    <script defer src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
-    <script defer src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-    <script defer src="js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-    <script defer src="js/scrollmagic/uncompressed/plugins/animation.velocity.js"></script>
-    <script defer src="js/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    
 </head>
 
 <body>
     <header>
         <div class="pinNav"></div>
-            <div class="mobNavigation">
-                <nav id="nav">
-                    <div id="closeMenu">
-                        <svg class="closeNav" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
-                            <g fill="none" fill-rule="evenodd">
-                                <g>
-                                    <g transform="translate(-295 -20) translate(295 20)">
-                                        <circle cx="30" cy="30" r="30" fill="#F3F3F3" />
-                                        <path fill="#1A1C25" d="M13 29H47V31H13z" transform="rotate(-45 30 30)" />
-                                        <path fill="#1A1C25" d="M13 29H47V31H13z" transform="rotate(45 30 30)" />
-                                    </g>
+        <div class="mobNavigation">
+            <nav id="nav">
+                <div id="closeMenu">
+                    <svg class="closeNav" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+                        <g fill="none" fill-rule="evenodd">
+                            <g>
+                                <g transform="translate(-295 -20) translate(295 20)">
+                                    <circle cx="30" cy="30" r="30" fill="#F3F3F3" />
+                                    <path fill="#1A1C25" d="M13 29H47V31H13z" transform="rotate(-45 30 30)" />
+                                    <path fill="#1A1C25" d="M13 29H47V31H13z" transform="rotate(45 30 30)" />
                                 </g>
                             </g>
-                        </svg></div>
-                    <ul>
-                        <li class="menu">
-                            <a href="#portfolID" id="portfolio">
-                                <h2>portfolio<span class="MenuOn">
-                                        <span id="pOn">*</span>
-                                        <span id="pOff">/</span>
-                                    </span>
-                                </h2>
-                            </a>
-                        </li>
-                        <li class="menu <?php if (is_page_template('index.php')) echo 'active'; ?>">
-                            <a href="art.html" id="art">
-                                <h2>art<span class="MenuOn">
-                                        <span id="aOn">*</span>
-                                        <span id="aOff">/</span>
-                                    </span>
-                                </h2>
-                            </a>
-                        </li>
-                        <li class="menu">
-                            <a href="#aboutID" id="about">
-                                <h2>About<span class="MenuOn">
-                                        <span id="abOn">*</span>
-                                        <span id="abOff">/</span>
-                                    </span>
-                                </h2>
-                            </a>
-                        </li>
-                        <li class="menu">
-                            <a href="#contactID" id="contact">
-                                <h2>contact<span class="MenuOn">
-                                        <span id="cOn">*</span>
-                                        <span id="cOff">/</span>
-                                    </span>
-                                </h2>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+                        </g>
+                    </svg>
+                </div>
+                <ul>
+                    <li class="menu">
+                        <a href="#portfolID" id="portfolio">
+                            <h2>portfolio<span class="MenuOn">
+                                    <span id="pOn">*</span>
+                                    <span id="pOff">/</span>
+                                </span>
+                            </h2>
+                        </a>
+                    </li>
+                    <li class="menu <?php if (is_page_template('index.php')) echo 'active'; ?>">
+                        <a href="art.html" id="art">
+                            <h2>art<span class="MenuOn">
+                                    <span id="aOn">*</span>
+                                    <span id="aOff">/</span>
+                                </span>
+                            </h2>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <a href="#aboutID" id="about">
+                            <h2>About<span class="MenuOn">
+                                    <span id="abOn">*</span>
+                                    <span id="abOff">/</span>
+                                </span>
+                            </h2>
+                        </a>
+                    </li>
+                    <li class="menu">
+                        <a href="#contactID" id="contact">
+                            <h2>contact<span class="MenuOn">
+                                    <span id="cOn">*</span>
+                                    <span id="cOff">/</span>
+                                </span>
+                            </h2>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <div class="cursor-point"></div>
         <div style="height: 100vh;" id="Header">
@@ -93,7 +90,8 @@
                             </g>
                         </g>
                     </g>
-                </svg></div>
+                </svg>
+            </div>
             <div class="logo"><img src="img/icon/logo.png" alt="logo"></div>
             <div class="copyr"><img src="img/icon/copyright.png" alt="copyright">2020</div>
             <video autoplay loop muted="muted" class="video">
@@ -120,67 +118,93 @@
             <div class="PortfCenter">
                 <div class="PortfAll" id="portfolID">
                     <div class="portfol">
-                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-01.png" class="tilt-effect" alt="grid01" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-01.png" class="tilt-effect"
+                                    alt="grid01"
+                                    data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
                         </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-02.png" class="tilt-effect" alt="grid01" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-02.png" class="tilt-effect"
+                                    alt="grid01"
+                                    data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
                         </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-03.png" class="tilt-effect" alt="grid01" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-03.png" class="tilt-effect"
+                                    alt="grid01"
+                                    data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
                         </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-04.png" class="tilt-effect" alt="grid01" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-04.png" class="tilt-effect"
+                                    alt="grid01"
+                                    data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
                         </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-05.png" class="tilt-effect" alt="grid01" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-05.png" class="tilt-effect"
+                                    alt="grid01"
+                                    data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
                         </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-06.png" class="tilt-effect" alt="grid01" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-06.png" class="tilt-effect"
+                                    alt="grid01"
+                                    data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
                         </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-07.png" class="tilt-effect" alt="grid01" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-07.png" class="tilt-effect"
+                                    alt="grid01"
+                                    data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
                         </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-08.png" class="tilt-effect" alt="grid01" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-08.png" class="tilt-effect"
+                                    alt="grid01"
+                                    data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
                         </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-09.png" class="tilt-effect" alt="grid01" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-09.png" class="tilt-effect"
+                                    alt="grid01"
+                                    data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
                         </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-10.png" class="tilt-effect" alt="grid01" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-10.png" class="tilt-effect"
+                                    alt="grid01"
+                                    data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
                         </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-11.png" class="tilt-effect" alt="grid01" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-11.png" class="tilt-effect"
+                                    alt="grid01"
+                                    data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
                         </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-12.png" class="tilt-effect" alt="grid01" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-12.png" class="tilt-effect"
+                                    alt="grid01"
+                                    data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
                         </div>
                         <div class="textPortf">Website</div>
                     </div>
                     <div class="portfol">
-                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-13.png" class="tilt-effect" alt="grid01" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
+                        <div class='ImgPortf'><a href="##"><img src="img/progects/photo-13.png" class="tilt-effect"
+                                    alt="grid01"
+                                    data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' /></a>
                         </div>
                         <div class="textPortf">Website</div>
                     </div>
@@ -194,7 +218,9 @@
             </div>
             <div class="Paint">
                 <div class="PaintAnimImg">
-                    <a href="art.html"><img src="img/Paint/gallery-photo.jpg" class="tilt-effect" data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' alt="gallary"></a>
+                    <a href="art.html"><img src="img/Paint/gallery-photo.jpg" class="tilt-effect"
+                            data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }'
+                            alt="gallary"></a>
                     <div class="PaintBg"></div>
                 </div>
                 <a href="art.html">
@@ -224,7 +250,8 @@
                                     </g>
                                 </g>
                             </g>
-                        </svg></div>
+                        </svg>
+                    </div>
                 </a>
                 <div class="ball"></div>
             </div>
@@ -234,9 +261,9 @@
         <div class="GetIT"><a>get in touch</a></div>
         <div class="footerAll">
             <div class="footer" id="contactID">
-                
-                    <h3><a href="##">martaverba@outlook.com</a></h3>
-                
+
+                <h3><a href="##">martaverba@outlook.com</a></h3>
+
                 <div class="allHref">
                     <div class="behance">
                         <a href="##">
@@ -313,132 +340,132 @@
         //ART
         //generate slide show
         var i,
-              slides = document.getElementsByClassName("imgArt");
-            for (i = 0; i < slides.length; i++) {
-              document.getElementById("SlideAll").insertAdjacentHTML("beforeend",
+            slides = document.getElementsByClassName("imgArt");
+        for (i = 0; i < slides.length; i++) {
+            document.getElementById("SlideAll").insertAdjacentHTML("beforeend",
                 "<img src='" + slides[i].getAttribute("src") + "' alt='slide' class='Slide Unactive'>");
-            }
-            var a = 0;
-            jQuery(".imgArt").each(function () {
-              a++;
-              jQuery(this).attr("onclick", "currentSlide(" + (a - 1) + ")");
+        }
+        var a = 0;
+        jQuery(".imgArt").each(function () {
+            a++;
+            jQuery(this).attr("onclick", "currentSlide(" + (a - 1) + ")");
+        });
+
+
+
+        jQuery(document).ready(function () {
+            if (screen.width > 750) { jQuery('.pinNav').css("height", jQuery("nav").height() + 45); };
+            if (screen.width <= 750) { jQuery('.pinNav').css("height", jQuery(".menuMob").height() + 59) };
+        });
+
+        //cursor
+        window.addEventListener("mousemove", function (evt) {
+            var x = evt.x
+            var y = evt.y
+            var cursorPoint = document.querySelector(".cursor-point")
+            setTimeout(() => {
+                cursorPoint.style.left = x + "px"
+                cursorPoint.style.top = y + "px"
+            }, 60);
+        });
+
+        //Timer for scroll
+        var myHash = location.hash;
+        location.hash = '';
+        if (myHash[1] != undefined) {
+            jQuery(document).ready(function () {
+                jQuery('html, body').animate({ scrollTop: jQuery(myHash).offset().top }, 500);
             });
-        
-        
-        
-                jQuery(document).ready(function () {
-                    if (screen.width > 750) {jQuery('.pinNav').css("height", jQuery("nav").height() + 45 );};
-                    if (screen.width <= 750) { jQuery('.pinNav').css("height", jQuery(".menuMob").height() + 59) };
-                });
-        
-                //cursor
-                window.addEventListener("mousemove", function (evt) {
-                    var x = evt.x
-                    var y = evt.y
-                    var cursorPoint = document.querySelector(".cursor-point")
-                    setTimeout(() => {
-                        cursorPoint.style.left = x + "px"
-                        cursorPoint.style.top = y + "px"
-                    }, 60);
-                });
-        
-                //Timer for scroll
-                var myHash = location.hash; 
-                location.hash = '';
-                if (myHash[1] != undefined) {
-                    jQuery(document).ready(function () {
-                         jQuery('html, body').animate({ scrollTop:  jQuery(myHash).offset().top }, 500);
-                    });
-                };
-        
-                //Anim start
-                jQuery(document).ready(function () {
-                     jQuery('#MV').css({ 'transition': '1s', 'transform': 'translate(0, 0)' });
-                    setTimeout(" jQuery('#design').css({'transition': '1s', 'transform': 'translate(0, 0)'})", 200);
-                    setTimeout(" jQuery('#design,#MV').css({'transition': '0s'})", 1500);
-                });
-        
-                //nav
-                jQuery(document).ready(function () {
-                    if (screen.width <= 750) {
-                         jQuery('.mobNavigation').css('display', 'none');
+        };
+
+        //Anim start
+        jQuery(document).ready(function () {
+            jQuery('#MV').css({ 'transition': '1s', 'transform': 'translate(0, 0)' });
+            setTimeout(" jQuery('#design').css({'transition': '1s', 'transform': 'translate(0, 0)'})", 200);
+            setTimeout(" jQuery('#design,#MV').css({'transition': '0s'})", 1500);
+        });
+
+        //nav
+        jQuery(document).ready(function () {
+            if (screen.width <= 750) {
+                jQuery('.mobNavigation').css('display', 'none');
+                setTimeout(() => {
+                    jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                }, 100);
+                jQuery('.menuMob').click(
+                    function () {
+                        jQuery('.mobNavigation').css('display', 'block');
                         setTimeout(() => {
-                             jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                            jQuery('.mobNavigation').css('transform', 'translateY(0)');
                         }, 100);
-                         jQuery('.menuMob').click(
-                            function () {
-                                 jQuery('.mobNavigation').css('display', 'block');
-                                setTimeout(() => {
-                                     jQuery('.mobNavigation').css('transform', 'translateY(0)');
-                                }, 100);
-                            }
-                        );
-                         jQuery('#closeMenu').click(
-                            function () {
-                                 jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
-                                setTimeout(() => {
-                                     jQuery('.mobNavigation').css('display', 'none');
-                                }, 1000);
-                            }
-                        );
-                         jQuery('.menu').click(
-                            function () {
-                                setTimeout(() => {
-                                     jQuery('.mobNavigation').css('display', 'none');
-                                }, 1000);
-                                 jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
-                            }
-                        );
                     }
-                });
-                jQuery(window).resize(function Nav() {
-                    if (screen.width <= 750) {
-                        jQuery('.mobNavigation').css('display', 'none');
+                );
+                jQuery('#closeMenu').click(
+                    function () {
+                        jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
                         setTimeout(() => {
-                             jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                            jQuery('.mobNavigation').css('display', 'none');
+                        }, 1000);
+                    }
+                );
+                jQuery('.menu').click(
+                    function () {
+                        setTimeout(() => {
+                            jQuery('.mobNavigation').css('display', 'none');
+                        }, 1000);
+                        jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                    }
+                );
+            }
+        });
+        jQuery(window).resize(function Nav() {
+            if (screen.width <= 750) {
+                jQuery('.mobNavigation').css('display', 'none');
+                setTimeout(() => {
+                    jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                }, 100);
+                jQuery('.menuMob').click(
+                    function () {
+                        jQuery('.mobNavigation').css('display', 'block');
+                        setTimeout(() => {
+                            jQuery('.mobNavigation').css('transform', 'translateY(0)');
                         }, 100);
-                         jQuery('.menuMob').click(
-                            function () {
-                                 jQuery('.mobNavigation').css('display', 'block');
-                                setTimeout(() => {
-                                     jQuery('.mobNavigation').css('transform', 'translateY(0)');
-                                }, 100);
-                            }
-                        );
-                         jQuery('#closeMenu').click(
-                            function () {
-                                 jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
-                                setTimeout(() => {
-                                     jQuery('.mobNavigation').css('display', 'none');
-                                }, 1000);
-                            }
-                        );
-                         jQuery('.menu').click(
-                            function () {
-                                setTimeout(() => {
-                                     jQuery('.mobNavigation').css('display', 'none');
-                                }, 1000);
-                                 jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
-                            }
-                        );
                     }
-                });
-        
-        
-                //Portfol Mob
-                var h = 5;
-                jQuery(".PortfButt").click(function () {
-                    var portfol =  jQuery(".portfol");
-                    for (let a = h + 4; a >= h; a--) {
-                         jQuery(portfol[a]).css("display", "block");
+                );
+                jQuery('#closeMenu').click(
+                    function () {
+                        jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
+                        setTimeout(() => {
+                            jQuery('.mobNavigation').css('display', 'none');
+                        }, 1000);
                     }
-                    h = h + 4;
-                    if ( jQuery('.portfol:visible').length >= portfol.length) {
-                         jQuery(".PortfButt").css("display", "none");
+                );
+                jQuery('.menu').click(
+                    function () {
+                        setTimeout(() => {
+                            jQuery('.mobNavigation').css('display', 'none');
+                        }, 1000);
+                        jQuery('.mobNavigation').css('transform', 'translateY(-120vh)');
                     }
-                });
-                //End Portfol Mob
-                
+                );
+            }
+        });
+
+
+        //Portfol Mob
+        var h = 5;
+        jQuery(".PortfButt").click(function () {
+            var portfol = jQuery(".portfol");
+            for (let a = h + 4; a >= h; a--) {
+                jQuery(portfol[a]).css("display", "block");
+            }
+            h = h + 4;
+            if (jQuery('.portfol:visible').length >= portfol.length) {
+                jQuery(".PortfButt").css("display", "none");
+            }
+        });
+        //End Portfol Mob
+
         //SmoothScroll
         jQuery(document).ready(function () {
             // Добавить плавную прокрутку до всех ссылок
@@ -462,14 +489,16 @@
                         window.location.hash = hash;
                     });
                 } // Конец, если
-                }); 
-                });
-        
-                
-            </script>
+            });
+        });
+
+
+    </script>
     <script src="js/main.js"></script>
-    <script src="cursor.js"></script>
+    <script src="js/cursor.js"></script>
     <script src="js/tiltfx.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
+
 
 </html>

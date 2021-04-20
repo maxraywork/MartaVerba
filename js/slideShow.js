@@ -25,7 +25,7 @@ function Start() {
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
-  
+
   jQuery(".SlideButt").removeClass('SlideOff');
   jQuery('.SlideButt').addClass('SlideButtOn');
   jQuery(slidesOn[n]).removeClass("Unactive");
@@ -81,10 +81,11 @@ function plusSlides() {
 
 function minusSlides() {
   Stop();
-  var slides = document.getElementsByClassName("Slides");
+  var slides = document.getElementsByClassName("Slide");
+  console.log(slides);
   if (slideIndex <= 0) {
     var a = slides.length - 1;
-    console.log(a+" первое");
+    console.log(a);
   jQuery(slidesOn[slideIndex]).addClass("NextAnimRev");
   jQuery(slidesOn[a]).removeClass("Unactive");
   jQuery(slidesOn[a]).addClass("BackAnimRev");
@@ -98,7 +99,6 @@ function minusSlides() {
   setTimeout(() => {
     showSlides(slideIndex = a);
   }, 900);
-     console.log(a+" второе");
   setTimeout(() => {
     Start();
   }, 900);
@@ -124,9 +124,7 @@ else {
 }
 
 function showSlides(n) {
-  var slides = document.getElementsByClassName("Slide");
-  if (n >= slides.length) { slideIndex = 0 };
- // if (n < 0) { slideIndex = slides.length - 1 };
+  // var slides = document.getElementsByClassName("Slide");
 }
 
 

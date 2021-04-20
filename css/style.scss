@@ -1232,14 +1232,14 @@ $BallM: 413px;
 }
 
 .cursor,
-.cursor-point {
+.cursor-point, .cursor-around {
     display: none;
 }
 
 
 
 @media (any-pointer: fine) {
-    .cursor-point {
+    .cursor-point, .cursor-around {
         display: block;
     }
 

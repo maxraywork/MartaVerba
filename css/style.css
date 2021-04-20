@@ -1171,12 +1171,12 @@ nav ul li:last-child {
 }
 
 .cursor,
-.cursor-point {
+.cursor-point, .cursor-around {
   display: none;
 }
 
 @media (any-pointer: fine) {
-  .cursor-point {
+  .cursor-point, .cursor-around {
     display: block;
   }
   .cursor {
@@ -1192,6 +1192,21 @@ nav ul li:last-child {
     fill: var(--cursor-fill);
     stroke: var(--cursor-stroke);
     stroke-width: var(--cursor-stroke-width);
+  }
+  .cursor-around {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    border: 1px solid var(--cursor-stroke);
+    width: 140px;
+    height: 140px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 50%;
+    z-index: 9999999;
   }
 }
 /*# sourceMappingURL=style.css.map */
