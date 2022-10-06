@@ -9,7 +9,7 @@ let Start = gsap.timeline({
     scrollTrigger: {
         trigger: ".mainDes",
         start: "bottom 70%",
-        markers: true,
+        markers: false,
     }
 });
 
@@ -23,7 +23,7 @@ ScrollTrigger.create({
     start: "top top",
     endTrigger: 'html',
     toggleClass: 'sticky',
-    markers: true,
+    markers: false,
     scrub: false
 });
 ScrollTrigger.create({
@@ -31,7 +31,7 @@ ScrollTrigger.create({
     start: "top top",
     endTrigger: 'html',
     toggleClass: {targets: ".menuMob", className: "sticky"},
-    markers: true,
+    markers: false,
     scrub: false
 });
 
@@ -41,7 +41,7 @@ ScrollTrigger.create({
     start: "top 70%",
     end: "bottom 70%",
     toggleClass: {targets: "#portfolio", className: "active"},
-    markers: true,
+    markers: false,
     scrub: false
 });
 ScrollTrigger.create({
@@ -49,7 +49,7 @@ ScrollTrigger.create({
     start: "top 70%",
     end: "bottom 70%",
     toggleClass: {targets: "#art", className: "active"},
-    markers: true,
+    markers: false,
     scrub: false
 });
 ScrollTrigger.create({
@@ -57,7 +57,7 @@ ScrollTrigger.create({
     start: "top 70%",
     end: "bottom 70%",
     toggleClass: {targets: "#about", className: "active"},
-    markers: true,
+    markers: false,
     scrub: false
 });
 ScrollTrigger.create({
@@ -65,7 +65,7 @@ ScrollTrigger.create({
     start: "top 70%",
     endTrigger: 'html',
     toggleClass: {targets: "#contact", className: "active"},
-    markers: true,
+    markers: false,
     scrub: false
 });
 
@@ -81,7 +81,7 @@ portImg.forEach(img => {
             trigger: img,
             start: "top bottom",
             end: "bottom 80%",
-            markers: true,
+            markers: false,
         }
     })
 });
@@ -93,7 +93,7 @@ let Dark = gsap.timeline({
         trigger: ".PortfAll",
         start: "40% bottom",
         end: "+=40%",
-        markers: true,
+        markers: false,
     }
 });
 
@@ -111,7 +111,7 @@ let Light = gsap.timeline({
         trigger: "#AboutFull",
         start: "75% center",
         end: "+=20%",
-        markers: true,
+        markers: false,
     }
     
 });
@@ -132,7 +132,7 @@ gsap.to(".PaintLogo", {
         trigger: ".AnimPaint",
         start: "top 90%",
         end: "+=50%",
-        markers: true,
+        markers: false,
     },
     transform: "translate(0, 0)",
     toggleClass: { targets: "#art", className: "active" }
@@ -143,7 +143,7 @@ gsap.to(".scrollBallMore", {
         trigger: ".Paint",
         start: "top bottom",
         end: "+=40%",
-        markers: true,
+        markers: false,
     },
     transform: "translate(0, 0)"
 });
@@ -153,7 +153,7 @@ gsap.to(".PaintBg", {
         trigger: ".PaintAnimImg",
         start: "top bottom",
         end: "bottom bottom",
-        markers: true,
+        markers: false,
     },
     width: "0"
 });
@@ -164,7 +164,7 @@ gsap.to(".ball", {
         trigger: ".textBall",
         start: "top 80%",
         end: "bottom 80%",
-        markers: true
+        markers: false
     },
     transform: 'translate(0, 0)'
 });
@@ -174,7 +174,7 @@ gsap.to(".behance, .drib, .insta", {
         trigger: ".allHref",
         start: "top 90%",
         end: "+=15%",
-        markers: true
+        markers: false
     },
     stagger: 0.3,
     transform: 'translate(0, 0)'
